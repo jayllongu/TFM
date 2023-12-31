@@ -1,0 +1,263 @@
+"";"cod_distrito";"distrito";"cod_barrio";"barrio";"indicador_completo";"valor_indicador"
+"1";1;"Centro";11;"Palacio";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";124
+"2";1;"Centro";11;"Palacio";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";490
+"3";1;"Centro";12;"Embajadores";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";86,2
+"4";1;"Centro";12;"Embajadores";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";268
+"5";1;"Centro";13;"Cortes";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";147
+"6";1;"Centro";13;"Cortes";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";1,057
+"7";1;"Centro";14;"Justicia";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";158
+"8";1;"Centro";14;"Justicia";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";621
+"9";1;"Centro";15;"Universidad";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";107
+"10";1;"Centro";15;"Universidad";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";497
+"11";1;"Centro";16;"Sol";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";169
+"12";1;"Centro";16;"Sol";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";1,057
+"13";2;"Arganzuela";21;"Imperial";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";85,6
+"14";2;"Arganzuela";21;"Imperial";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";364
+"15";2;"Arganzuela";22;"Las Acacias";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";83
+"16";2;"Arganzuela";22;"Las Acacias";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";203
+"17";2;"Arganzuela";23;"La Chopera";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";78,9
+"18";2;"Arganzuela";23;"La Chopera";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";248
+"19";2;"Arganzuela";24;"Legazpi";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";89,1
+"20";2;"Arganzuela";24;"Legazpi";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";193
+"21";2;"Arganzuela";25;"Delicias";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";84,2
+"22";2;"Arganzuela";25;"Delicias";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";345
+"23";2;"Arganzuela";26;"Palos de la Frontera";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";81,5
+"24";2;"Arganzuela";26;"Palos de la Frontera";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";297
+"25";2;"Arganzuela";27;"Atocha";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";118
+"26";2;"Arganzuela";27;"Atocha";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";918
+"27";3;"Retiro";31;"Pacífico";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";95
+"28";3;"Retiro";31;"Pacífico";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";262
+"29";3;"Retiro";32;"Adelfas";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";88,5
+"30";3;"Retiro";32;"Adelfas";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";182
+"31";3;"Retiro";33;"La Estrella";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";124
+"32";3;"Retiro";33;"La Estrella";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";368
+"33";3;"Retiro";34;"Ibiza";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";160
+"34";3;"Retiro";34;"Ibiza";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";504
+"35";3;"Retiro";35;"Los Jerónimos";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";327
+"36";3;"Retiro";35;"Los Jerónimos";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";1,788
+"37";3;"Retiro";36;"Niño Jesús";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";205
+"38";3;"Retiro";36;"Niño Jesús";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";416
+"39";4;"Salamanca";41;"Recoletos";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";259
+"40";4;"Salamanca";41;"Recoletos";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";803
+"41";4;"Salamanca";42;"Goya";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";157
+"42";4;"Salamanca";42;"Goya";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";548
+"43";4;"Salamanca";43;"Fuente del Berro";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";110
+"44";4;"Salamanca";43;"Fuente del Berro";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";307
+"45";4;"Salamanca";44;"Guindalera";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";115
+"46";4;"Salamanca";44;"Guindalera";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";245
+"47";4;"Salamanca";45;"Lista";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";152
+"48";4;"Salamanca";45;"Lista";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";415
+"49";4;"Salamanca";46;"Castellana";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";260
+"50";4;"Salamanca";46;"Castellana";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";715
+"51";5;"Chamartín";51;"El Viso";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";313
+"52";5;"Chamartín";51;"El Viso";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";733
+"53";5;"Chamartín";52;"Prosperidad";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";101
+"54";5;"Chamartín";52;"Prosperidad";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";301
+"55";5;"Chamartín";53;"Ciudad Jardín";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";114
+"56";5;"Chamartín";53;"Ciudad Jardín";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";284
+"57";5;"Chamartín";54;"Hispanoamérica";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";156
+"58";5;"Chamartín";54;"Hispanoamérica";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";567
+"59";5;"Chamartín";55;"Nueva España";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";201
+"60";5;"Chamartín";55;"Nueva España";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";438
+"61";5;"Chamartín";56;"Castilla";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";107
+"62";5;"Chamartín";56;"Castilla";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";558
+"63";6;"Tetuán";61;"Bellas Vistas";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";78,3
+"64";6;"Tetuán";61;"Bellas Vistas";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";177
+"65";6;"Tetuán";62;"Cuatro Caminos";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";116
+"66";6;"Tetuán";62;"Cuatro Caminos";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";555
+"67";6;"Tetuán";63;"Castillejos";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";115
+"68";6;"Tetuán";63;"Castillejos";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";321
+"69";6;"Tetuán";64;"Almenara";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";81,8
+"70";6;"Tetuán";64;"Almenara";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";148
+"71";6;"Tetuán";65;"Valdeacederas";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";56,5
+"72";6;"Tetuán";65;"Valdeacederas";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";99
+"73";6;"Tetuán";66;"Berruguete";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";69,8
+"74";6;"Tetuán";66;"Berruguete";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";106
+"75";7;"Chamberí";71;"Gaztambide";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";111
+"76";7;"Chamberí";71;"Gaztambide";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";273
+"77";7;"Chamberí";72;"Arapiles";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";120
+"78";7;"Chamberí";72;"Arapiles";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";419
+"79";7;"Chamberí";73;"Trafalgar";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";114
+"80";7;"Chamberí";73;"Trafalgar";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";346
+"81";7;"Chamberí";74;"Almagro";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";183
+"82";7;"Chamberí";74;"Almagro";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";678
+"83";7;"Chamberí";75;"Ríos Rosas";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";121
+"84";7;"Chamberí";75;"Ríos Rosas";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";475
+"85";7;"Chamberí";76;"Vallehermoso";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";177
+"86";7;"Chamberí";76;"Vallehermoso";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";622
+"87";8;"Fuencarral-El Pardo";81;"El Pardo";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";95
+"88";8;"Fuencarral-El Pardo";81;"El Pardo";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";1,629
+"89";8;"Fuencarral-El Pardo";82;"Fuentelarreina";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";173
+"90";8;"Fuencarral-El Pardo";82;"Fuentelarreina";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";712
+"91";8;"Fuencarral-El Pardo";83;"Peñagrande";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";101
+"92";8;"Fuencarral-El Pardo";83;"Peñagrande";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";297
+"93";8;"Fuencarral-El Pardo";84;"El Pilar";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";75
+"94";8;"Fuencarral-El Pardo";84;"El Pilar";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";297
+"95";8;"Fuencarral-El Pardo";85;"La Paz";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";96
+"96";8;"Fuencarral-El Pardo";85;"La Paz";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";1,945
+"97";8;"Fuencarral-El Pardo";86;"Valverde";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";84,3
+"98";8;"Fuencarral-El Pardo";86;"Valverde";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";496
+"99";8;"Fuencarral-El Pardo";87;"Mirasierra";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";138
+"100";8;"Fuencarral-El Pardo";87;"Mirasierra";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";456
+"101";8;"Fuencarral-El Pardo";88;"El Goloso";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";82,4
+"102";8;"Fuencarral-El Pardo";88;"El Goloso";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";682
+"103";9;"Moncloa-Aravaca";91;"Casa de Campo";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";93
+"104";9;"Moncloa-Aravaca";91;"Casa de Campo";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";930
+"105";9;"Moncloa-Aravaca";92;"Argüelles";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";201
+"106";9;"Moncloa-Aravaca";92;"Argüelles";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";667
+"107";9;"Moncloa-Aravaca";93;"Ciudad Universitaria";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";154
+"108";9;"Moncloa-Aravaca";93;"Ciudad Universitaria";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";1,745
+"109";9;"Moncloa-Aravaca";94;"Valdezarza";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";81,6
+"110";9;"Moncloa-Aravaca";94;"Valdezarza";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";242
+"111";9;"Moncloa-Aravaca";95;"Valdemarín";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";201
+"112";9;"Moncloa-Aravaca";95;"Valdemarín";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";363
+"113";9;"Moncloa-Aravaca";96;"El Plantío";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";330
+"114";9;"Moncloa-Aravaca";96;"El Plantío";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";387
+"115";9;"Moncloa-Aravaca";97;"Aravaca";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";147
+"116";9;"Moncloa-Aravaca";97;"Aravaca";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";245
+"117";10;"Latina";101;"Los Cármenes";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";63,9
+"118";10;"Latina";101;"Los Cármenes";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";198
+"119";10;"Latina";102;"Puerta del Ángel";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";69,4
+"120";10;"Latina";102;"Puerta del Ángel";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";144
+"121";10;"Latina";103;"Lucero";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";63,1
+"122";10;"Latina";103;"Lucero";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";176
+"123";10;"Latina";104;"Aluche";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";59,1
+"124";10;"Latina";104;"Aluche";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";276
+"125";10;"Latina";105;"Campamento";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";63,6
+"126";10;"Latina";105;"Campamento";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";344
+"127";10;"Latina";106;"Cuatro Vientos";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";60,3
+"128";10;"Latina";106;"Cuatro Vientos";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";320
+"129";10;"Latina";107;"Las Águilas";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";55,8
+"130";10;"Latina";107;"Las Águilas";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";366
+"131";11;"Carabanchel";111;"Comillas";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";58,7
+"132";11;"Carabanchel";111;"Comillas";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";116
+"133";11;"Carabanchel";112;"Opañel";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";53,9
+"134";11;"Carabanchel";112;"Opañel";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";110
+"135";11;"Carabanchel";113;"San Isidro";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";50,4
+"136";11;"Carabanchel";113;"San Isidro";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";86,2
+"137";11;"Carabanchel";114;"Vista Alegre";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";53,4
+"138";11;"Carabanchel";114;"Vista Alegre";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";174
+"139";11;"Carabanchel";115;"Puerta Bonita";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";50,2
+"140";11;"Carabanchel";115;"Puerta Bonita";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";143
+"141";11;"Carabanchel";116;"Buenavista";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";53,6
+"142";11;"Carabanchel";116;"Buenavista";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";213
+"143";11;"Carabanchel";117;"Abrantes";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";51
+"144";11;"Carabanchel";117;"Abrantes";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";176
+"145";12;"Usera";121;"Orcasitas";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";53,7
+"146";12;"Usera";121;"Orcasitas";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";130
+"147";12;"Usera";122;"Orcasur";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";53,4
+"148";12;"Usera";122;"Orcasur";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";255
+"149";12;"Usera";123;"San Fermín";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";50,5
+"150";12;"Usera";123;"San Fermín";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";227
+"151";12;"Usera";124;"Almendrales";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";54,6
+"152";12;"Usera";124;"Almendrales";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";101
+"153";12;"Usera";125;"Moscardó";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";51,8
+"154";12;"Usera";125;"Moscardó";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";199
+"155";12;"Usera";126;"Zofío";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";42,2
+"156";12;"Usera";126;"Zofío";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";112
+"157";12;"Usera";127;"Pradolongo";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";44,2
+"158";12;"Usera";127;"Pradolongo";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";98
+"159";13;"Puente de Vallecas";131;"Entrevías";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";43
+"160";13;"Puente de Vallecas";131;"Entrevías";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";166
+"161";13;"Puente de Vallecas";132;"San Diego";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";45,3
+"162";13;"Puente de Vallecas";132;"San Diego";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";83,3
+"163";13;"Puente de Vallecas";133;"Palomeras Bajas";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";44,1
+"164";13;"Puente de Vallecas";133;"Palomeras Bajas";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";104
+"165";13;"Puente de Vallecas";134;"Palomeras Sureste";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";42,4
+"166";13;"Puente de Vallecas";134;"Palomeras Sureste";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";108
+"167";13;"Puente de Vallecas";135;"Portazgo";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";39,9
+"168";13;"Puente de Vallecas";135;"Portazgo";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";69,1
+"169";13;"Puente de Vallecas";136;"Numancia";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";46,4
+"170";13;"Puente de Vallecas";136;"Numancia";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";115
+"171";14;"Moratalaz";141;"Pavones";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";99
+"172";14;"Moratalaz";141;"Pavones";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";453
+"173";14;"Moratalaz";142;"Horcajo";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";97
+"174";14;"Moratalaz";142;"Horcajo";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";105
+"175";14;"Moratalaz";143;"Marroquina";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";82,6
+"176";14;"Moratalaz";143;"Marroquina";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";247
+"177";14;"Moratalaz";144;"Media Legua";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";85,8
+"178";14;"Moratalaz";144;"Media Legua";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";250
+"179";14;"Moratalaz";145;"Fontarrón";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";72,1
+"180";14;"Moratalaz";145;"Fontarrón";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";272
+"181";14;"Moratalaz";146;"Vinateros";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";74,6
+"182";14;"Moratalaz";146;"Vinateros";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";347
+"183";15;"Ciudad Lineal";151;"Ventas";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";69,4
+"184";15;"Ciudad Lineal";151;"Ventas";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";290
+"185";15;"Ciudad Lineal";152;"Pueblo Nuevo";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";69,9
+"186";15;"Ciudad Lineal";152;"Pueblo Nuevo";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";195
+"187";15;"Ciudad Lineal";153;"Quintana";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";78,3
+"188";15;"Ciudad Lineal";153;"Quintana";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";178
+"189";15;"Ciudad Lineal";154;"Concepción";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";84,8
+"190";15;"Ciudad Lineal";154;"Concepción";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";185
+"191";15;"Ciudad Lineal";155;"San Pascual";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";94
+"192";15;"Ciudad Lineal";155;"San Pascual";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";536
+"193";15;"Ciudad Lineal";156;"San Juan Bautista";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";102
+"194";15;"Ciudad Lineal";156;"San Juan Bautista";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";486
+"195";15;"Ciudad Lineal";157;"Colina";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";111
+"196";15;"Ciudad Lineal";157;"Colina";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";275
+"197";15;"Ciudad Lineal";158;"Atalaya";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";165
+"198";15;"Ciudad Lineal";158;"Atalaya";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";309
+"199";15;"Ciudad Lineal";159;"Costillares";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";112
+"200";15;"Ciudad Lineal";159;"Costillares";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";296
+"201";16;"Hortaleza";161;"Palomas";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";145
+"202";16;"Hortaleza";161;"Palomas";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";434
+"203";16;"Hortaleza";162;"Piovera";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";215
+"204";16;"Hortaleza";162;"Piovera";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";384
+"205";16;"Hortaleza";163;"Canillas";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";93
+"206";16;"Hortaleza";163;"Canillas";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";370
+"207";16;"Hortaleza";164;"Pinar del Rey";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";80,4
+"208";16;"Hortaleza";164;"Pinar del Rey";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";194
+"209";16;"Hortaleza";165;"Apóstol Santiago";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";105
+"210";16;"Hortaleza";165;"Apóstol Santiago";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";413
+"211";16;"Hortaleza";166;"Valdefuentes";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";115
+"212";16;"Hortaleza";166;"Valdefuentes";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";362
+"213";17;"Villaverde";171;"Villaverde Alto, Casco Histórico de Villaverde";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";51,9
+"214";17;"Villaverde";171;"Villaverde Alto, Casco Histórico de Villaverde";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";168
+"215";17;"Villaverde";172;"San Cristóbal";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";26,9
+"216";17;"Villaverde";172;"San Cristóbal";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";106
+"217";17;"Villaverde";173;"Butarque";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";62,6
+"218";17;"Villaverde";173;"Butarque";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";155
+"219";17;"Villaverde";174;"Los Rosales";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";52,1
+"220";17;"Villaverde";174;"Los Rosales";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";157
+"221";17;"Villaverde";175;"Los Ángeles";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";59,7
+"222";17;"Villaverde";175;"Los Ángeles";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";221
+"223";18;"Villa de Vallecas";181;"Casco Histórico de Vallecas";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";55,4
+"224";18;"Villa de Vallecas";181;"Casco Histórico de Vallecas";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";214
+"225";18;"Villa de Vallecas";182;"Santa Eugenia";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";57,9
+"226";18;"Villa de Vallecas";182;"Santa Eugenia";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";381
+"227";18;"Villa de Vallecas";183;"Ensanche de Vallecas";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";70,9
+"228";18;"Villa de Vallecas";183;"Ensanche de Vallecas";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";144
+"229";19;"Vicálvaro";191;"Casco Histórico de Vicálvaro";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";54,1
+"230";19;"Vicálvaro";191;"Casco Histórico de Vicálvaro";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";387
+"231";19;"Vicálvaro";192;"Valdebernardo";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";61,8
+"232";19;"Vicálvaro";192;"Valdebernardo";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";193
+"233";19;"Vicálvaro";193;"Valderrivas";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";77
+"234";19;"Vicálvaro";193;"Valderrivas";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";131
+"235";19;"Vicálvaro";194;"El Cañaveral";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";93
+"236";19;"Vicálvaro";194;"El Cañaveral";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";408
+"237";20;"San Blas-Canillejas";201;"Simancas";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";67,3
+"238";20;"San Blas-Canillejas";201;"Simancas";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";300
+"239";20;"San Blas-Canillejas";202;"Hellín";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";63
+"240";20;"San Blas-Canillejas";202;"Hellín";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";155
+"241";20;"San Blas-Canillejas";203;"Amposta";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";46,9
+"242";20;"San Blas-Canillejas";203;"Amposta";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";80,5
+"243";20;"San Blas-Canillejas";204;"Arcos";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";73,4
+"244";20;"San Blas-Canillejas";204;"Arcos";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";336
+"245";20;"San Blas-Canillejas";205;"Rosas";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";80,9
+"246";20;"San Blas-Canillejas";205;"Rosas";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";442
+"247";20;"San Blas-Canillejas";206;"Rejas";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";60
+"248";20;"San Blas-Canillejas";206;"Rejas";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";333
+"249";20;"San Blas-Canillejas";207;"Canillejas";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";62,7
+"250";20;"San Blas-Canillejas";207;"Canillejas";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";245
+"251";20;"San Blas-Canillejas";208;"El Salvador";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";123
+"252";20;"San Blas-Canillejas";208;"El Salvador";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";976
+"253";21;"Barajas";211;"Alameda de Osuna";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";88,7
+"254";21;"Barajas";211;"Alameda de Osuna";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";377
+"255";21;"Barajas";212;"Aeropuerto";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";73,5
+"256";21;"Barajas";212;"Aeropuerto";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";986
+"257";21;"Barajas";213;"Casco Histórico de Barajas";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";82,8
+"258";21;"Barajas";213;"Casco Histórico de Barajas";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";183
+"259";21;"Barajas";214;"Timón";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";98
+"260";21;"Barajas";214;"Timón";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";459
+"261";21;"Barajas";215;"Corralejos";"Valor catastral medio de los bienes inmuebles: personas físicas en miles de €";116
+"262";21;"Barajas";215;"Corralejos";"Valor catastral medio de los bienes inmuebles: personas jurídicas en miles de €";1,036

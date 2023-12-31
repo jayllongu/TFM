@@ -1,0 +1,132 @@
+"";"cod_distrito";"distrito";"cod_barrio";"barrio";"indicador_completo";"valor_indicador"
+"1";1;"Centro";11;"Palacio";"Renta neta media anual de los hogares (Urban Audit)";38,974
+"2";1;"Centro";12;"Embajadores";"Renta neta media anual de los hogares (Urban Audit)";29,472
+"3";1;"Centro";13;"Cortes";"Renta neta media anual de los hogares (Urban Audit)";40,963
+"4";1;"Centro";14;"Justicia";"Renta neta media anual de los hogares (Urban Audit)";48,203
+"5";1;"Centro";15;"Universidad";"Renta neta media anual de los hogares (Urban Audit)";35,344
+"6";1;"Centro";16;"Sol";"Renta neta media anual de los hogares (Urban Audit)";35,057
+"7";2;"Arganzuela";21;"Imperial";"Renta neta media anual de los hogares (Urban Audit)";46,879
+"8";2;"Arganzuela";22;"Acacias";"Renta neta media anual de los hogares (Urban Audit)";47,683
+"9";2;"Arganzuela";23;"Chopera";"Renta neta media anual de los hogares (Urban Audit)";35,015
+"10";2;"Arganzuela";24;"Legazpi";"Renta neta media anual de los hogares (Urban Audit)";52,569
+"11";2;"Arganzuela";25;"Delicias";"Renta neta media anual de los hogares (Urban Audit)";43,018
+"12";2;"Arganzuela";26;"Palos de la Frontera";"Renta neta media anual de los hogares (Urban Audit)";37,389
+"13";2;"Arganzuela";27;"Atocha";"Renta neta media anual de los hogares (Urban Audit)";42,657
+"14";3;"Retiro";31;"Pacífico";"Renta neta media anual de los hogares (Urban Audit)";44,832
+"15";3;"Retiro";32;"Adelfas";"Renta neta media anual de los hogares (Urban Audit)";49,538
+"16";3;"Retiro";33;"Estrella";"Renta neta media anual de los hogares (Urban Audit)";63,495
+"17";3;"Retiro";34;"Ibiza";"Renta neta media anual de los hogares (Urban Audit)";50,08
+"18";3;"Retiro";35;"Los Jerónimos";"Renta neta media anual de los hogares (Urban Audit)";72,997
+"19";3;"Retiro";36;"Niño Jesús";"Renta neta media anual de los hogares (Urban Audit)";70,945
+"20";4;"Salamanca";41;"Recoletos";"Renta neta media anual de los hogares (Urban Audit)";81,692
+"21";4;"Salamanca";42;"Goya";"Renta neta media anual de los hogares (Urban Audit)";54,456
+"22";4;"Salamanca";43;"Fuente del Berro";"Renta neta media anual de los hogares (Urban Audit)";44,221
+"23";4;"Salamanca";44;"Guindalera";"Renta neta media anual de los hogares (Urban Audit)";50,064
+"24";4;"Salamanca";45;"Lista";"Renta neta media anual de los hogares (Urban Audit)";54,488
+"25";4;"Salamanca";46;"Castellana";"Renta neta media anual de los hogares (Urban Audit)";81,38
+"26";5;"Chamartín";51;"El Viso";"Renta neta media anual de los hogares (Urban Audit)";80,37
+"27";5;"Chamartín";52;"Prosperidad";"Renta neta media anual de los hogares (Urban Audit)";46,805
+"28";5;"Chamartín";53;"Ciudad Jardín";"Renta neta media anual de los hogares (Urban Audit)";48,944
+"29";5;"Chamartín";54;"Hispanoamérica";"Renta neta media anual de los hogares (Urban Audit)";69,389
+"30";5;"Chamartín";55;"Nueva España";"Renta neta media anual de los hogares (Urban Audit)";78,098
+"31";5;"Chamartín";56;"Castilla";"Renta neta media anual de los hogares (Urban Audit)";61,31
+"32";6;"Tetuán";61;"Bellas Vistas";"Renta neta media anual de los hogares (Urban Audit)";33,574
+"33";6;"Tetuán";62;"Cuatro Caminos";"Renta neta media anual de los hogares (Urban Audit)";46,339
+"34";6;"Tetuán";63;"Castillejos";"Renta neta media anual de los hogares (Urban Audit)";48,631
+"35";6;"Tetuán";64;"Almenara";"Renta neta media anual de los hogares (Urban Audit)";31,609
+"36";6;"Tetuán";65;"Valdeacederas";"Renta neta media anual de los hogares (Urban Audit)";30,164
+"37";6;"Tetuán";66;"Berruguete";"Renta neta media anual de los hogares (Urban Audit)";31,387
+"38";7;"Chamberí";71;"Gaztambide";"Renta neta media anual de los hogares (Urban Audit)";46,63
+"39";7;"Chamberí";72;"Arapiles";"Renta neta media anual de los hogares (Urban Audit)";46,882
+"40";7;"Chamberí";73;"Trafalgar";"Renta neta media anual de los hogares (Urban Audit)";46,19
+"41";7;"Chamberí";74;"Almagro";"Renta neta media anual de los hogares (Urban Audit)";68,837
+"42";7;"Chamberí";75;"Ríos Rosas";"Renta neta media anual de los hogares (Urban Audit)";53,844
+"43";7;"Chamberí";76;"Vallehermoso";"Renta neta media anual de los hogares (Urban Audit)";61,47
+"44";8;"Fuencarral-El Pardo";81;"El Pardo";"Renta neta media anual de los hogares (Urban Audit)";38,883
+"45";8;"Fuencarral-El Pardo";82;"Fuentelarreina";"Renta neta media anual de los hogares (Urban Audit)";90,678
+"46";8;"Fuencarral-El Pardo";83;"Peñagrande";"Renta neta media anual de los hogares (Urban Audit)";48,909
+"47";8;"Fuencarral-El Pardo";84;"El Pilar";"Renta neta media anual de los hogares (Urban Audit)";35,594
+"48";8;"Fuencarral-El Pardo";85;"La Paz";"Renta neta media anual de los hogares (Urban Audit)";61,899
+"49";8;"Fuencarral-El Pardo";86;"Valverde";"Renta neta media anual de los hogares (Urban Audit)";46,29
+"50";8;"Fuencarral-El Pardo";87;"Mirasierra";"Renta neta media anual de los hogares (Urban Audit)";72,361
+"51";8;"Fuencarral-El Pardo";88;"El Goloso";"Renta neta media anual de los hogares (Urban Audit)";67,42
+"52";9;"Moncloa-Aravaca";91;"Casa de Campo";"Renta neta media anual de los hogares (Urban Audit)";44,964
+"53";9;"Moncloa-Aravaca";92;"Argüelles";"Renta neta media anual de los hogares (Urban Audit)";55,125
+"54";9;"Moncloa-Aravaca";93;"Ciudad Universitaria";"Renta neta media anual de los hogares (Urban Audit)";65,33
+"55";9;"Moncloa-Aravaca";94;"Valdezarza";"Renta neta media anual de los hogares (Urban Audit)";37,335
+"56";9;"Moncloa-Aravaca";95;"Valdemarín";"Renta neta media anual de los hogares (Urban Audit)";90,897
+"57";9;"Moncloa-Aravaca";96;"El Plantío";"Renta neta media anual de los hogares (Urban Audit)";91,933
+"58";9;"Moncloa-Aravaca";97;"Aravaca";"Renta neta media anual de los hogares (Urban Audit)";72,999
+"59";10;"Latina";101;"Los Cármenes";"Renta neta media anual de los hogares (Urban Audit)";31,467
+"60";10;"Latina";102;"Puerta del Ángel";"Renta neta media anual de los hogares (Urban Audit)";29,648
+"61";10;"Latina";103;"Lucero";"Renta neta media anual de los hogares (Urban Audit)";31,918
+"62";10;"Latina";104;"Aluche";"Renta neta media anual de los hogares (Urban Audit)";32,611
+"63";10;"Latina";105;"Campamento";"Renta neta media anual de los hogares (Urban Audit)";33,454
+"64";10;"Latina";106;"Cuatro Vientos";"Renta neta media anual de los hogares (Urban Audit)";37,421
+"65";10;"Latina";107;"Las Águilas";"Renta neta media anual de los hogares (Urban Audit)";31,644
+"66";11;"Carabanchel";111;"Comillas";"Renta neta media anual de los hogares (Urban Audit)";29,444
+"67";11;"Carabanchel";112;"Opañel";"Renta neta media anual de los hogares (Urban Audit)";30,002
+"68";11;"Carabanchel";113;"San Isidro";"Renta neta media anual de los hogares (Urban Audit)";28,092
+"69";11;"Carabanchel";114;"Vista Alegre";"Renta neta media anual de los hogares (Urban Audit)";29,307
+"70";11;"Carabanchel";115;"Puerta Bonita";"Renta neta media anual de los hogares (Urban Audit)";27,425
+"71";11;"Carabanchel";116;"Buenavista";"Renta neta media anual de los hogares (Urban Audit)";33,558
+"72";11;"Carabanchel";117;"Abrantes";"Renta neta media anual de los hogares (Urban Audit)";30,009
+"73";12;"Usera";121;"Orcasitas";"Renta neta media anual de los hogares (Urban Audit)";29,43
+"74";12;"Usera";122;"Orcasur";"Renta neta media anual de los hogares (Urban Audit)";27,367
+"75";12;"Usera";123;"San Fermín";"Renta neta media anual de los hogares (Urban Audit)";27,478
+"76";12;"Usera";124;"Almendrales";"Renta neta media anual de los hogares (Urban Audit)";27,823
+"77";12;"Usera";125;"Moscardó";"Renta neta media anual de los hogares (Urban Audit)";28,149
+"78";12;"Usera";126;"Zofío";"Renta neta media anual de los hogares (Urban Audit)";27,572
+"79";12;"Usera";127;"Pradolongo";"Renta neta media anual de los hogares (Urban Audit)";24,711
+"80";13;"Puente de Vallecas";131;"Entrevías";"Renta neta media anual de los hogares (Urban Audit)";24,124
+"81";13;"Puente de Vallecas";132;"San Diego";"Renta neta media anual de los hogares (Urban Audit)";23,112
+"82";13;"Puente de Vallecas";133;"Palomeras Bajas";"Renta neta media anual de los hogares (Urban Audit)";30,752
+"83";13;"Puente de Vallecas";134;"Palomeras Sureste";"Renta neta media anual de los hogares (Urban Audit)";28,902
+"84";13;"Puente de Vallecas";135;"Portazgo";"Renta neta media anual de los hogares (Urban Audit)";25,564
+"85";13;"Puente de Vallecas";136;"Numancia";"Renta neta media anual de los hogares (Urban Audit)";26,666
+"86";14;"Moratalaz";141;"Pavones";"Renta neta media anual de los hogares (Urban Audit)";35,784
+"87";14;"Moratalaz";142;"Horcajo";"Renta neta media anual de los hogares (Urban Audit)";47,612
+"88";14;"Moratalaz";143;"Marroquina";"Renta neta media anual de los hogares (Urban Audit)";42,559
+"89";14;"Moratalaz";144;"Media Legua";"Renta neta media anual de los hogares (Urban Audit)";37,694
+"90";14;"Moratalaz";145;"Fontarrón";"Renta neta media anual de los hogares (Urban Audit)";29,82
+"91";14;"Moratalaz";146;"Vinateros";"Renta neta media anual de los hogares (Urban Audit)";30,745
+"92";15;"Ciudad Lineal";151;"Ventas";"Renta neta media anual de los hogares (Urban Audit)";30,442
+"93";15;"Ciudad Lineal";152;"Pueblo Nuevo";"Renta neta media anual de los hogares (Urban Audit)";32,028
+"94";15;"Ciudad Lineal";153;"Quintana";"Renta neta media anual de los hogares (Urban Audit)";32,082
+"95";15;"Ciudad Lineal";154;"Concepción";"Renta neta media anual de los hogares (Urban Audit)";37,233
+"96";15;"Ciudad Lineal";155;"San Pascual";"Renta neta media anual de los hogares (Urban Audit)";44,222
+"97";15;"Ciudad Lineal";156;"San Juan Bautista";"Renta neta media anual de los hogares (Urban Audit)";61,278
+"98";15;"Ciudad Lineal";157;"Colina";"Renta neta media anual de los hogares (Urban Audit)";56,253
+"99";15;"Ciudad Lineal";158;"Atalaya";"Renta neta media anual de los hogares (Urban Audit)";69,982
+"100";15;"Ciudad Lineal";159;"Costillares";"Renta neta media anual de los hogares (Urban Audit)";70,459
+"101";16;"Hortaleza";161;"Palomas";"Renta neta media anual de los hogares (Urban Audit)";85,614
+"102";16;"Hortaleza";162;"Piovera";"Renta neta media anual de los hogares (Urban Audit)";85,549
+"103";16;"Hortaleza";163;"Canillas";"Renta neta media anual de los hogares (Urban Audit)";42,659
+"104";16;"Hortaleza";164;"Pinar del Rey";"Renta neta media anual de los hogares (Urban Audit)";35,784
+"105";16;"Hortaleza";165;"Apóstol Santiago";"Renta neta media anual de los hogares (Urban Audit)";38,9
+"106";16;"Hortaleza";166;"Valdefuentes";"Renta neta media anual de los hogares (Urban Audit)";58,384
+"107";17;"Villaverde";171;"Villaverde Alto, Casco Histórico de Villaverde";"Renta neta media anual de los hogares (Urban Audit)";26,701
+"108";17;"Villaverde";172;"San Cristóbal";"Renta neta media anual de los hogares (Urban Audit)";21,071
+"109";17;"Villaverde";173;"Butarque";"Renta neta media anual de los hogares (Urban Audit)";31,437
+"110";17;"Villaverde";174;"Los Rosales";"Renta neta media anual de los hogares (Urban Audit)";30,32
+"111";17;"Villaverde";175;"Los Ángeles";"Renta neta media anual de los hogares (Urban Audit)";29,952
+"112";18;"Villa de Vallecas";181;"Casco Histórico de Vallecas";"Renta neta media anual de los hogares (Urban Audit)";26,309
+"113";18;"Villa de Vallecas";182;"Santa Eugenia";"Renta neta media anual de los hogares (Urban Audit)";38,641
+"114";18;"Villa de Vallecas";183;"Ensanche de Vallecas";"Renta neta media anual de los hogares (Urban Audit)";35,065
+"115";19;"Vicálvaro";191;"Casco Histórico de Vicálvaro";"Renta neta media anual de los hogares (Urban Audit)";25,968
+"116";19;"Vicálvaro";192;"Valdebernardo";"Renta neta media anual de los hogares (Urban Audit)";41,478
+"117";19;"Vicálvaro";193;"Valderrivas";"Renta neta media anual de los hogares (Urban Audit)";42,775
+"118";19;"Vicálvaro";194;"El Cañaveral";"Renta neta media anual de los hogares (Urban Audit)";34,452
+"119";20;"San Blas-Canillejas";201;"Simancas";"Renta neta media anual de los hogares (Urban Audit)";33,593
+"120";20;"San Blas-Canillejas";202;"Hellín";"Renta neta media anual de los hogares (Urban Audit)";25,72
+"121";20;"San Blas-Canillejas";203;"Amposta";"Renta neta media anual de los hogares (Urban Audit)";23,562
+"122";20;"San Blas-Canillejas";204;"Arcos";"Renta neta media anual de los hogares (Urban Audit)";31,15
+"123";20;"San Blas-Canillejas";205;"Rosas";"Renta neta media anual de los hogares (Urban Audit)";46,723
+"124";20;"San Blas-Canillejas";206;"Rejas";"Renta neta media anual de los hogares (Urban Audit)";40,746
+"125";20;"San Blas-Canillejas";207;"Canillejas";"Renta neta media anual de los hogares (Urban Audit)";33,554
+"126";20;"San Blas-Canillejas";208;"El Salvador";"Renta neta media anual de los hogares (Urban Audit)";57,32
+"127";21;"Barajas";211;"Alameda de Osuna";"Renta neta media anual de los hogares (Urban Audit)";55,681
+"128";21;"Barajas";212;"Aeropuerto";"Renta neta media anual de los hogares (Urban Audit)";27,316
+"129";21;"Barajas";213;"Casco Histórico de Barajas";"Renta neta media anual de los hogares (Urban Audit)";31,626
+"130";21;"Barajas";214;"Timón";"Renta neta media anual de los hogares (Urban Audit)";42,831
+"131";21;"Barajas";215;"Corralejos";"Renta neta media anual de los hogares (Urban Audit)";70,874

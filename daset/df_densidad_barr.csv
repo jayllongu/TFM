@@ -1,0 +1,132 @@
+"";"cod_distrito";"distrito";"cod_barrio";"barrio";"indicador_completo";"valor_indicador"
+"1";1;"Centro";11;"Palacio";"Población densidad (hab./Ha.)";161
+"2";1;"Centro";12;"Embajadores";"Población densidad (hab./Ha.)";455
+"3";1;"Centro";13;"Cortes";"Población densidad (hab./Ha.)";182
+"4";1;"Centro";14;"Justicia";"Población densidad (hab./Ha.)";244
+"5";1;"Centro";15;"Universidad";"Población densidad (hab./Ha.)";353
+"6";1;"Centro";16;"Sol";"Población densidad (hab./Ha.)";171
+"7";2;"Arganzuela";21;"Imperial";"Población densidad (hab./Ha.)";237
+"8";2;"Arganzuela";22;"Acacias";"Población densidad (hab./Ha.)";344
+"9";2;"Arganzuela";23;"Chopera";"Población densidad (hab./Ha.)";357
+"10";2;"Arganzuela";24;"Legazpi";"Población densidad (hab./Ha.)";140
+"11";2;"Arganzuela";25;"Delicias";"Población densidad (hab./Ha.)";268
+"12";2;"Arganzuela";26;"Palos de la Frontera";"Población densidad (hab./Ha.)";405
+"13";2;"Arganzuela";27;"Atocha";"Población densidad (hab./Ha.)";16,46
+"14";3;"Retiro";31;"Pacífico";"Población densidad (hab./Ha.)";445
+"15";3;"Retiro";32;"Adelfas";"Población densidad (hab./Ha.)";293
+"16";3;"Retiro";33;"Estrella";"Población densidad (hab./Ha.)";228
+"17";3;"Retiro";34;"Ibiza";"Población densidad (hab./Ha.)";447
+"18";3;"Retiro";35;"Los Jerónimos";"Población densidad (hab./Ha.)";36,96
+"19";3;"Retiro";36;"Niño Jesús";"Población densidad (hab./Ha.)";240
+"20";4;"Salamanca";41;"Recoletos";"Población densidad (hab./Ha.)";181
+"21";4;"Salamanca";42;"Goya";"Población densidad (hab./Ha.)";389
+"22";4;"Salamanca";43;"Fuente del Berro";"Población densidad (hab./Ha.)";249
+"23";4;"Salamanca";44;"Guindalera";"Población densidad (hab./Ha.)";264
+"24";4;"Salamanca";45;"Lista";"Población densidad (hab./Ha.)";408
+"25";4;"Salamanca";46;"Castellana";"Población densidad (hab./Ha.)";224
+"26";5;"Chamartín";51;"El Viso";"Población densidad (hab./Ha.)";102
+"27";5;"Chamartín";52;"Prosperidad";"Población densidad (hab./Ha.)";355
+"28";5;"Chamartín";53;"Ciudad Jardín";"Población densidad (hab./Ha.)";248
+"29";5;"Chamartín";54;"Hispanoamérica";"Población densidad (hab./Ha.)";187
+"30";5;"Chamartín";55;"Nueva España";"Población densidad (hab./Ha.)";140
+"31";5;"Chamartín";56;"Castilla";"Población densidad (hab./Ha.)";79,71
+"32";6;"Tetuán";61;"Bellas Vistas";"Población densidad (hab./Ha.)";418
+"33";6;"Tetuán";62;"Cuatro Caminos";"Población densidad (hab./Ha.)";297
+"34";6;"Tetuán";63;"Castillejos";"Población densidad (hab./Ha.)";296
+"35";6;"Tetuán";64;"Almenara";"Población densidad (hab./Ha.)";230
+"36";6;"Tetuán";65;"Valdeacederas";"Población densidad (hab./Ha.)";228
+"37";6;"Tetuán";66;"Berruguete";"Población densidad (hab./Ha.)";426
+"38";7;"Chamberí";71;"Gaztambide";"Población densidad (hab./Ha.)";461
+"39";7;"Chamberí";72;"Arapiles";"Población densidad (hab./Ha.)";427
+"40";7;"Chamberí";73;"Trafalgar";"Población densidad (hab./Ha.)";409
+"41";7;"Chamberí";74;"Almagro";"Población densidad (hab./Ha.)";212
+"42";7;"Chamberí";75;"Ríos Rosas";"Población densidad (hab./Ha.)";283
+"43";7;"Chamberí";76;"Vallehermoso";"Población densidad (hab./Ha.)";191
+"44";8;"Fuencarral-El Pardo";81;"El Pardo";"Población densidad (hab./Ha.)";0,19
+"45";8;"Fuencarral-El Pardo";82;"Fuentelarreina";"Población densidad (hab./Ha.)";23,93
+"46";8;"Fuencarral-El Pardo";83;"Peñagrande";"Población densidad (hab./Ha.)";156
+"47";8;"Fuencarral-El Pardo";84;"El Pilar";"Población densidad (hab./Ha.)";344
+"48";8;"Fuencarral-El Pardo";85;"La Paz";"Población densidad (hab./Ha.)";156
+"49";8;"Fuencarral-El Pardo";86;"Valverde";"Población densidad (hab./Ha.)";72
+"50";8;"Fuencarral-El Pardo";87;"Mirasierra";"Población densidad (hab./Ha.)";48,69
+"51";8;"Fuencarral-El Pardo";88;"El Goloso";"Población densidad (hab./Ha.)";7,19
+"52";9;"Moncloa-Aravaca";91;"Casa de Campo";"Población densidad (hab./Ha.)";7,56
+"53";9;"Moncloa-Aravaca";92;"Argüelles";"Población densidad (hab./Ha.)";322
+"54";9;"Moncloa-Aravaca";93;"Ciudad Universitaria";"Población densidad (hab./Ha.)";11,5
+"55";9;"Moncloa-Aravaca";94;"Valdezarza";"Población densidad (hab./Ha.)";218
+"56";9;"Moncloa-Aravaca";95;"Valdemarín";"Población densidad (hab./Ha.)";21,07
+"57";9;"Moncloa-Aravaca";96;"El Plantío";"Población densidad (hab./Ha.)";7,93
+"58";9;"Moncloa-Aravaca";97;"Aravaca";"Población densidad (hab./Ha.)";47,14
+"59";10;"Latina";101;"Los Cármenes";"Población densidad (hab./Ha.)";137
+"60";10;"Latina";102;"Puerta del Ángel";"Población densidad (hab./Ha.)";308
+"61";10;"Latina";103;"Lucero";"Población densidad (hab./Ha.)";219
+"62";10;"Latina";104;"Aluche";"Población densidad (hab./Ha.)";237
+"63";10;"Latina";105;"Campamento";"Población densidad (hab./Ha.)";21,59
+"64";10;"Latina";106;"Cuatro Vientos";"Población densidad (hab./Ha.)";10,83
+"65";10;"Latina";107;"Las Águilas";"Población densidad (hab./Ha.)";144
+"66";11;"Carabanchel";111;"Comillas";"Población densidad (hab./Ha.)";345
+"67";11;"Carabanchel";112;"Opañel";"Población densidad (hab./Ha.)";304
+"68";11;"Carabanchel";113;"San Isidro";"Población densidad (hab./Ha.)";211
+"69";11;"Carabanchel";114;"Vista Alegre";"Población densidad (hab./Ha.)";300
+"70";11;"Carabanchel";115;"Puerta Bonita";"Población densidad (hab./Ha.)";223
+"71";11;"Carabanchel";116;"Buenavista";"Población densidad (hab./Ha.)";85,53
+"72";11;"Carabanchel";117;"Abrantes";"Población densidad (hab./Ha.)";204
+"73";12;"Usera";121;"Orcasitas";"Población densidad (hab./Ha.)";171
+"74";12;"Usera";122;"Orcasur";"Población densidad (hab./Ha.)";102
+"75";12;"Usera";123;"San Fermín";"Población densidad (hab./Ha.)";163
+"76";12;"Usera";124;"Almendrales";"Población densidad (hab./Ha.)";284
+"77";12;"Usera";125;"Moscardó";"Población densidad (hab./Ha.)";299
+"78";12;"Usera";126;"Zofío";"Población densidad (hab./Ha.)";186
+"79";12;"Usera";127;"Pradolongo";"Población densidad (hab./Ha.)";163
+"80";13;"Puente de Vallecas";131;"Entrevías";"Población densidad (hab./Ha.)";59,47
+"81";13;"Puente de Vallecas";132;"San Diego";"Población densidad (hab./Ha.)";410
+"82";13;"Puente de Vallecas";133;"Palomeras Bajas";"Población densidad (hab./Ha.)";237
+"83";13;"Puente de Vallecas";134;"Palomeras Sureste";"Población densidad (hab./Ha.)";139
+"84";13;"Puente de Vallecas";135;"Portazgo";"Población densidad (hab./Ha.)";233
+"85";13;"Puente de Vallecas";136;"Numancia";"Población densidad (hab./Ha.)";262
+"86";14;"Moratalaz";141;"Pavones";"Población densidad (hab./Ha.)";93
+"87";14;"Moratalaz";142;"Horcajo";"Población densidad (hab./Ha.)";86,27
+"88";14;"Moratalaz";143;"Marroquina";"Población densidad (hab./Ha.)";152
+"89";14;"Moratalaz";144;"Media Legua";"Población densidad (hab./Ha.)";180
+"90";14;"Moratalaz";145;"Fontarrón";"Población densidad (hab./Ha.)";182
+"91";14;"Moratalaz";146;"Vinateros";"Población densidad (hab./Ha.)";288
+"92";15;"Ciudad Lineal";151;"Ventas";"Población densidad (hab./Ha.)";153
+"93";15;"Ciudad Lineal";152;"Pueblo Nuevo";"Población densidad (hab./Ha.)";274
+"94";15;"Ciudad Lineal";153;"Quintana";"Población densidad (hab./Ha.)";348
+"95";15;"Ciudad Lineal";154;"Concepción";"Población densidad (hab./Ha.)";239
+"96";15;"Ciudad Lineal";155;"San Pascual";"Población densidad (hab./Ha.)";172
+"97";15;"Ciudad Lineal";156;"San Juan Bautista";"Población densidad (hab./Ha.)";126
+"98";15;"Ciudad Lineal";157;"Colina";"Población densidad (hab./Ha.)";116
+"99";15;"Ciudad Lineal";158;"Atalaya";"Población densidad (hab./Ha.)";62,48
+"100";15;"Ciudad Lineal";159;"Costillares";"Población densidad (hab./Ha.)";156
+"101";16;"Hortaleza";161;"Palomas";"Población densidad (hab./Ha.)";60,53
+"102";16;"Hortaleza";162;"Piovera";"Población densidad (hab./Ha.)";47,58
+"103";16;"Hortaleza";163;"Canillas";"Población densidad (hab./Ha.)";162
+"104";16;"Hortaleza";164;"Pinar del Rey";"Población densidad (hab./Ha.)";200
+"105";16;"Hortaleza";165;"Apóstol Santiago";"Población densidad (hab./Ha.)";129
+"106";16;"Hortaleza";166;"Valdefuentes";"Población densidad (hab./Ha.)";36,96
+"107";17;"Villaverde";171;"Villaverde Alto, Casco Histórico de Villaverde";"Población densidad (hab./Ha.)";50,52
+"108";17;"Villaverde";172;"San Cristóbal";"Población densidad (hab./Ha.)";156
+"109";17;"Villaverde";173;"Butarque";"Población densidad (hab./Ha.)";31,41
+"110";17;"Villaverde";174;"Los Rosales";"Población densidad (hab./Ha.)";247
+"111";17;"Villaverde";175;"Los Ángeles";"Población densidad (hab./Ha.)";168
+"112";18;"Villa de Vallecas";181;"Casco Histórico de Vallecas";"Población densidad (hab./Ha.)";9,51
+"113";18;"Villa de Vallecas";182;"Santa Eugenia";"Población densidad (hab./Ha.)";119
+"114";18;"Villa de Vallecas";183;"Ensanche de Vallecas";"Población densidad (hab./Ha.)";77,07
+"115";19;"Vicálvaro";191;"Casco Histórico de Vicálvaro";"Población densidad (hab./Ha.)";16,59
+"116";19;"Vicálvaro";192;"Valdebernardo";"Población densidad (hab./Ha.)";69,8
+"117";19;"Vicálvaro";193;"Valderrivas";"Población densidad (hab./Ha.)";282
+"118";19;"Vicálvaro";194;"El Cañaveral";"Población densidad (hab./Ha.)";2,27
+"119";20;"San Blas-Canillejas";201;"Simancas";"Población densidad (hab./Ha.)";126
+"120";20;"San Blas-Canillejas";202;"Hellín";"Población densidad (hab./Ha.)";170
+"121";20;"San Blas-Canillejas";203;"Amposta";"Población densidad (hab./Ha.)";240
+"122";20;"San Blas-Canillejas";204;"Arcos";"Población densidad (hab./Ha.)";189
+"123";20;"San Blas-Canillejas";205;"Rosas";"Población densidad (hab./Ha.)";34,2
+"124";20;"San Blas-Canillejas";206;"Rejas";"Población densidad (hab./Ha.)";34,49
+"125";20;"San Blas-Canillejas";207;"Canillejas";"Población densidad (hab./Ha.)";182
+"126";20;"San Blas-Canillejas";208;"El Salvador";"Población densidad (hab./Ha.)";61,04
+"127";21;"Barajas";211;"Alameda de Osuna";"Población densidad (hab./Ha.)";101
+"128";21;"Barajas";212;"Aeropuerto";"Población densidad (hab./Ha.)";0,64
+"129";21;"Barajas";213;"Casco Histórico de Barajas";"Población densidad (hab./Ha.)";140
+"130";21;"Barajas";214;"Timón";"Población densidad (hab./Ha.)";25,23
+"131";21;"Barajas";215;"Corralejos";"Población densidad (hab./Ha.)";16,56

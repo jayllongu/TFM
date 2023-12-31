@@ -1,0 +1,106 @@
+"";"cod_distrito";"distrito";"indicador_completo";"valor_indicador";"porcentaje"
+"1";1;"Centro";"Viviendas en estado ruinoso";330;0,38
+"2";1;"Centro";"Viviendas en estado malo";1725;1,99
+"3";1;"Centro";"Viviendas en estado deficiente";7895;9,1
+"4";1;"Centro";"Viviendas en estado bueno";74970;86,38
+"5";1;"Centro";"Estado de la vivienda no costa";1875;2,16
+"6";2;"Arganzuela";"Viviendas en estado ruinoso";540;0,71
+"7";2;"Arganzuela";"Viviendas en estado malo";1885;2,47
+"8";2;"Arganzuela";"Viviendas en estado deficiente";7200;9,44
+"9";2;"Arganzuela";"Viviendas en estado bueno";65310;85,65
+"10";2;"Arganzuela";"Estado de la vivienda no costa";1320;1,73
+"11";3;"Retiro";"Viviendas en estado ruinoso";45;0,08
+"12";3;"Retiro";"Viviendas en estado malo";255;0,45
+"13";3;"Retiro";"Viviendas en estado deficiente";445;0,79
+"14";3;"Retiro";"Viviendas en estado bueno";54950;97,09
+"15";3;"Retiro";"Estado de la vivienda no costa";900;1,59
+"16";4;"Salamanca";"Viviendas en estado ruinoso";70;0,08
+"17";4;"Salamanca";"Viviendas en estado malo";265;0,32
+"18";4;"Salamanca";"Viviendas en estado deficiente";1255;1,5
+"19";4;"Salamanca";"Viviendas en estado bueno";80955;96,86
+"20";4;"Salamanca";"Estado de la vivienda no costa";1035;1,24
+"21";5;"Chamartín";"Viviendas en estado ruinoso";120;0,17
+"22";5;"Chamartín";"Viviendas en estado malo";175;0,24
+"23";5;"Chamartín";"Viviendas en estado deficiente";1635;2,27
+"24";5;"Chamartín";"Viviendas en estado bueno";69735;96,69
+"25";5;"Chamartín";"Estado de la vivienda no costa";460;0,64
+"26";6;"Tetuán";"Viviendas en estado ruinoso";270;0,34
+"27";6;"Tetuán";"Viviendas en estado malo";1130;1,41
+"28";6;"Tetuán";"Viviendas en estado deficiente";5940;7,41
+"29";6;"Tetuán";"Viviendas en estado bueno";72245;90,12
+"30";6;"Tetuán";"Estado de la vivienda no costa";580;0,72
+"31";7;"Chamberí";"Viviendas en estado ruinoso";35;0,04
+"32";7;"Chamberí";"Viviendas en estado malo";370;0,46
+"33";7;"Chamberí";"Viviendas en estado deficiente";2290;2,87
+"34";7;"Chamberí";"Viviendas en estado bueno";76720;96,16
+"35";7;"Chamberí";"Estado de la vivienda no costa";365;0,46
+"36";8;"Fuencarral-El Pardo";"Viviendas en estado ruinoso";125;0,13
+"37";8;"Fuencarral-El Pardo";"Viviendas en estado malo";110;0,11
+"38";8;"Fuencarral-El Pardo";"Viviendas en estado deficiente";1890;1,9
+"39";8;"Fuencarral-El Pardo";"Viviendas en estado bueno";95455;96,17
+"40";8;"Fuencarral-El Pardo";"Estado de la vivienda no costa";1680;1,69
+"41";9;"Moncloa-Aravaca";"Viviendas en estado ruinoso";25;0,05
+"42";9;"Moncloa-Aravaca";"Viviendas en estado malo";215;0,39
+"43";9;"Moncloa-Aravaca";"Viviendas en estado deficiente";1865;3,38
+"44";9;"Moncloa-Aravaca";"Viviendas en estado bueno";52235;94,77
+"45";9;"Moncloa-Aravaca";"Estado de la vivienda no costa";780;1,42
+"46";10;"Latina";"Viviendas en estado ruinoso";250;0,22
+"47";10;"Latina";"Viviendas en estado malo";810;0,7
+"48";10;"Latina";"Viviendas en estado deficiente";5245;4,54
+"49";10;"Latina";"Viviendas en estado bueno";107455;93,04
+"50";10;"Latina";"Estado de la vivienda no costa";1735;1,5
+"51";11;"Carabanchel";"Viviendas en estado ruinoso";125;0,11
+"52";11;"Carabanchel";"Viviendas en estado malo";1035;0,9
+"53";11;"Carabanchel";"Viviendas en estado deficiente";6090;5,28
+"54";11;"Carabanchel";"Viviendas en estado bueno";103880;90,12
+"55";11;"Carabanchel";"Estado de la vivienda no costa";4135;3,59
+"56";12;"Usera";"Viviendas en estado ruinoso";380;0,64
+"57";12;"Usera";"Viviendas en estado malo";370;0,62
+"58";12;"Usera";"Viviendas en estado deficiente";2715;4,58
+"59";12;"Usera";"Viviendas en estado bueno";54565;92,04
+"60";12;"Usera";"Estado de la vivienda no costa";1255;2,12
+"61";13;"Puente de Vallecas";"Viviendas en estado ruinoso";470;0,44
+"62";13;"Puente de Vallecas";"Viviendas en estado malo";1880;1,76
+"63";13;"Puente de Vallecas";"Viviendas en estado deficiente";9785;9,18
+"64";13;"Puente de Vallecas";"Viviendas en estado bueno";92170;86,47
+"65";13;"Puente de Vallecas";"Estado de la vivienda no costa";2285;2,14
+"66";14;"Moratalaz";"Viviendas en estado ruinoso";95;NA
+"67";14;"Moratalaz";"Viviendas en estado malo";NA;NA
+"68";14;"Moratalaz";"Viviendas en estado deficiente";415;NA
+"69";14;"Moratalaz";"Viviendas en estado bueno";43755;NA
+"70";14;"Moratalaz";"Estado de la vivienda no costa";140;NA
+"71";15;"Ciudad Lineal";"Viviendas en estado ruinoso";85;0,08
+"72";15;"Ciudad Lineal";"Viviendas en estado malo";260;0,26
+"73";15;"Ciudad Lineal";"Viviendas en estado deficiente";2385;2,34
+"74";15;"Ciudad Lineal";"Viviendas en estado bueno";97780;96,11
+"75";15;"Ciudad Lineal";"Estado de la vivienda no costa";1230;1,21
+"76";16;"Hortaleza";"Viviendas en estado ruinoso";120;0,16
+"77";16;"Hortaleza";"Viviendas en estado malo";735;0,98
+"78";16;"Hortaleza";"Viviendas en estado deficiente";1600;2,14
+"79";16;"Hortaleza";"Viviendas en estado bueno";70310;93,83
+"80";16;"Hortaleza";"Estado de la vivienda no costa";2170;2,9
+"81";17;"Villaverde";"Viviendas en estado ruinoso";140;0,23
+"82";17;"Villaverde";"Viviendas en estado malo";1145;1,85
+"83";17;"Villaverde";"Viviendas en estado deficiente";3655;5,9
+"84";17;"Villaverde";"Viviendas en estado bueno";55445;89,54
+"85";17;"Villaverde";"Estado de la vivienda no costa";1535;2,48
+"86";18;"Villa de Vallecas";"Viviendas en estado ruinoso";40;0,09
+"87";18;"Villa de Vallecas";"Viviendas en estado malo";175;0,4
+"88";18;"Villa de Vallecas";"Viviendas en estado deficiente";775;1,78
+"89";18;"Villa de Vallecas";"Viviendas en estado bueno";41730;95,89
+"90";18;"Villa de Vallecas";"Estado de la vivienda no costa";800;1,84
+"91";19;"Vicálvaro";"Viviendas en estado ruinoso";NA;NA
+"92";19;"Vicálvaro";"Viviendas en estado malo";75;NA
+"93";19;"Vicálvaro";"Viviendas en estado deficiente";675;NA
+"94";19;"Vicálvaro";"Viviendas en estado bueno";27550;NA
+"95";19;"Vicálvaro";"Estado de la vivienda no costa";2005;NA
+"96";20;"San Blas-Canillejas";"Viviendas en estado ruinoso";120;0,18
+"97";20;"San Blas-Canillejas";"Viviendas en estado malo";45;0,07
+"98";20;"San Blas-Canillejas";"Viviendas en estado deficiente";2750;4,08
+"99";20;"San Blas-Canillejas";"Viviendas en estado bueno";63645;94,36
+"100";20;"San Blas-Canillejas";"Estado de la vivienda no costa";890;1,32
+"101";21;"Barajas";"Viviendas en estado ruinoso";40;0,2
+"102";21;"Barajas";"Viviendas en estado malo";50;0,25
+"103";21;"Barajas";"Viviendas en estado deficiente";275;1,35
+"104";21;"Barajas";"Viviendas en estado bueno";19410;95,29
+"105";21;"Barajas";"Estado de la vivienda no costa";595;2,92

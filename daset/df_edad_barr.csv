@@ -1,0 +1,132 @@
+"";"cod_distrito";"distrito";"cod_barrio";"barrio";"indicador_completo";"valor_indicador"
+"1";1;"Centro";11;"Palacio";"Edad media de la población";45,8
+"2";1;"Centro";12;"Embajadores";"Edad media de la población";42,88
+"3";1;"Centro";13;"Cortes";"Edad media de la población";45,02
+"4";1;"Centro";14;"Justicia";"Edad media de la población";44,3
+"5";1;"Centro";15;"Universidad";"Edad media de la población";44,04
+"6";1;"Centro";16;"Sol";"Edad media de la población";44,7
+"7";2;"Arganzuela";21;"Imperial";"Edad media de la población";46,21
+"8";2;"Arganzuela";22;"Las Acacias";"Edad media de la población";46,49
+"9";2;"Arganzuela";23;"La Chopera";"Edad media de la población";46,49
+"10";2;"Arganzuela";24;"Legazpi";"Edad media de la población";38,27
+"11";2;"Arganzuela";25;"Delicias";"Edad media de la población";43,12
+"12";2;"Arganzuela";26;"Palos de la Frontera";"Edad media de la población";45,86
+"13";2;"Arganzuela";27;"Atocha";"Edad media de la población";38,65
+"14";3;"Retiro";31;"Pacífico";"Edad media de la población";47,6
+"15";3;"Retiro";32;"Adelfas";"Edad media de la población";45,07
+"16";3;"Retiro";33;"La Estrella";"Edad media de la población";48,59
+"17";3;"Retiro";34;"Ibiza";"Edad media de la población";46,93
+"18";3;"Retiro";35;"Los Jerónimos";"Edad media de la población";48,05
+"19";3;"Retiro";36;"Niño Jesús";"Edad media de la población";46,25
+"20";4;"Salamanca";41;"Recoletos";"Edad media de la población";45,96
+"21";4;"Salamanca";42;"Goya";"Edad media de la población";46,39
+"22";4;"Salamanca";43;"Fuente del Berro";"Edad media de la población";46,84
+"23";4;"Salamanca";44;"Guindalera";"Edad media de la población";46,76
+"24";4;"Salamanca";45;"Lista";"Edad media de la población";46,07
+"25";4;"Salamanca";46;"Castellana";"Edad media de la población";45,34
+"26";5;"Chamartín";51;"El Viso";"Edad media de la población";44,45
+"27";5;"Chamartín";52;"Prosperidad";"Edad media de la población";46,78
+"28";5;"Chamartín";53;"Ciudad Jardín";"Edad media de la población";46
+"29";5;"Chamartín";54;"Hispanoamérica";"Edad media de la población";45,99
+"30";5;"Chamartín";55;"Nueva España";"Edad media de la población";43,38
+"31";5;"Chamartín";56;"Castilla";"Edad media de la población";45,21
+"32";6;"Tetuán";61;"Bellas Vistas";"Edad media de la población";43,51
+"33";6;"Tetuán";62;"Cuatro Caminos";"Edad media de la población";45,79
+"34";6;"Tetuán";63;"Castillejos";"Edad media de la población";46,8
+"35";6;"Tetuán";64;"Almenara";"Edad media de la población";44,8
+"36";6;"Tetuán";65;"Valdeacederas";"Edad media de la población";41,86
+"37";6;"Tetuán";66;"Berruguete";"Edad media de la población";42,75
+"38";7;"Chamberí";71;"Gaztambide";"Edad media de la población";47,22
+"39";7;"Chamberí";72;"Arapiles";"Edad media de la población";46,18
+"40";7;"Chamberí";73;"Trafalgar";"Edad media de la población";45,46
+"41";7;"Chamberí";74;"Almagro";"Edad media de la población";46,28
+"42";7;"Chamberí";75;"Ríos Rosas";"Edad media de la población";45,91
+"43";7;"Chamberí";76;"Vallehermoso";"Edad media de la población";47,89
+"44";8;"Fuencarral-El Pardo";81;"El Pardo";"Edad media de la población";47,64
+"45";8;"Fuencarral-El Pardo";82;"Fuentelarreina";"Edad media de la población";45,3
+"46";8;"Fuencarral-El Pardo";83;"Peñagrande";"Edad media de la población";46,5
+"47";8;"Fuencarral-El Pardo";84;"El Pilar";"Edad media de la población";48,44
+"48";8;"Fuencarral-El Pardo";85;"La Paz";"Edad media de la población";48,99
+"49";8;"Fuencarral-El Pardo";86;"Valverde";"Edad media de la población";37,65
+"50";8;"Fuencarral-El Pardo";87;"Mirasierra";"Edad media de la población";39,12
+"51";8;"Fuencarral-El Pardo";88;"El Goloso";"Edad media de la población";33,17
+"52";9;"Moncloa-Aravaca";91;"Casa de Campo";"Edad media de la población";48,3
+"53";9;"Moncloa-Aravaca";92;"Argüelles";"Edad media de la población";47,36
+"54";9;"Moncloa-Aravaca";93;"Ciudad Universitaria";"Edad media de la población";46,19
+"55";9;"Moncloa-Aravaca";94;"Valdezarza";"Edad media de la población";46,42
+"56";9;"Moncloa-Aravaca";95;"Valdemarín";"Edad media de la población";36,34
+"57";9;"Moncloa-Aravaca";96;"El Plantío";"Edad media de la población";42,17
+"58";9;"Moncloa-Aravaca";97;"Aravaca";"Edad media de la población";39,83
+"59";10;"Latina";101;"Los Cármenes";"Edad media de la población";43,39
+"60";10;"Latina";102;"Puerta del Ángel";"Edad media de la población";45,29
+"61";10;"Latina";103;"Lucero";"Edad media de la población";45,74
+"62";10;"Latina";104;"Aluche";"Edad media de la población";48,56
+"63";10;"Latina";105;"Campamento";"Edad media de la población";45,88
+"64";10;"Latina";106;"Cuatro Vientos";"Edad media de la población";35,6
+"65";10;"Latina";107;"Las Águilas";"Edad media de la población";48,11
+"66";11;"Carabanchel";111;"Comillas";"Edad media de la población";46,76
+"67";11;"Carabanchel";112;"Opañel";"Edad media de la población";44,97
+"68";11;"Carabanchel";113;"San Isidro";"Edad media de la población";43,98
+"69";11;"Carabanchel";114;"Vista Alegre";"Edad media de la población";45,48
+"70";11;"Carabanchel";115;"Puerta Bonita";"Edad media de la población";43,02
+"71";11;"Carabanchel";116;"Buenavista";"Edad media de la población";39,66
+"72";11;"Carabanchel";117;"Abrantes";"Edad media de la población";42,62
+"73";12;"Usera";121;"Orcasitas";"Edad media de la población";43,51
+"74";12;"Usera";122;"Orcasur";"Edad media de la población";40,9
+"75";12;"Usera";123;"San Fermín";"Edad media de la población";40,22
+"76";12;"Usera";124;"Almendrales";"Edad media de la población";41,93
+"77";12;"Usera";125;"Moscardó";"Edad media de la población";43,87
+"78";12;"Usera";126;"Zofío";"Edad media de la población";43,29
+"79";12;"Usera";127;"Pradolongo";"Edad media de la población";42,26
+"80";13;"Puente de Vallecas";131;"Entrevías";"Edad media de la población";43,79
+"81";13;"Puente de Vallecas";132;"San Diego";"Edad media de la población";40,94
+"82";13;"Puente de Vallecas";133;"Palomeras Bajas";"Edad media de la población";43,35
+"83";13;"Puente de Vallecas";134;"Palomeras Sureste";"Edad media de la población";43,71
+"84";13;"Puente de Vallecas";135;"Portazgo";"Edad media de la población";44,94
+"85";13;"Puente de Vallecas";136;"Numancia";"Edad media de la población";43,62
+"86";14;"Moratalaz";141;"Pavones";"Edad media de la población";46,62
+"87";14;"Moratalaz";142;"Horcajo";"Edad media de la población";39,35
+"88";14;"Moratalaz";143;"Marroquina";"Edad media de la población";48,66
+"89";14;"Moratalaz";144;"Media Legua";"Edad media de la población";48,09
+"90";14;"Moratalaz";145;"Fontarrón";"Edad media de la población";47,3
+"91";14;"Moratalaz";146;"Vinateros";"Edad media de la población";49,36
+"92";15;"Ciudad Lineal";151;"Ventas";"Edad media de la población";46,71
+"93";15;"Ciudad Lineal";152;"Pueblo Nuevo";"Edad media de la población";45,37
+"94";15;"Ciudad Lineal";153;"Quintana";"Edad media de la población";46,16
+"95";15;"Ciudad Lineal";154;"Concepción";"Edad media de la población";46,93
+"96";15;"Ciudad Lineal";155;"San Pascual";"Edad media de la población";47,42
+"97";15;"Ciudad Lineal";156;"San Juan Bautista";"Edad media de la población";44,29
+"98";15;"Ciudad Lineal";157;"Colina";"Edad media de la población";44,73
+"99";15;"Ciudad Lineal";158;"Atalaya";"Edad media de la población";44,2
+"100";15;"Ciudad Lineal";159;"Costillares";"Edad media de la población";44,15
+"101";16;"Hortaleza";161;"Palomas";"Edad media de la población";39,96
+"102";16;"Hortaleza";162;"Piovera";"Edad media de la población";40,6
+"103";16;"Hortaleza";163;"Canillas";"Edad media de la población";47,41
+"104";16;"Hortaleza";164;"Pinar del Rey";"Edad media de la población";47,09
+"105";16;"Hortaleza";165;"Apóstol Santiago";"Edad media de la población";45,44
+"106";16;"Hortaleza";166;"Valdefuentes";"Edad media de la población";34,39
+"107";17;"Villaverde";171;"Villaverde Alto, Casco Histórico de Villaverde";"Edad media de la población";42,25
+"108";17;"Villaverde";172;"San Cristóbal";"Edad media de la población";38,75
+"109";17;"Villaverde";173;"Butarque";"Edad media de la población";35,92
+"110";17;"Villaverde";174;"Los Rosales";"Edad media de la población";42,29
+"111";17;"Villaverde";175;"Los Ángeles";"Edad media de la población";47,35
+"112";18;"Villa de Vallecas";181;"Casco Histórico de Vallecas";"Edad media de la población";41,25
+"113";18;"Villa de Vallecas";182;"Santa Eugenia";"Edad media de la población";45,59
+"114";18;"Villa de Vallecas";183;"Ensanche de Vallecas";"Edad media de la población";33,28
+"115";19;"Vicálvaro";191;"Casco Histórico de Vicálvaro";"Edad media de la población";44,09
+"116";19;"Vicálvaro";192;"Valdebernardo";"Edad media de la población";41,26
+"117";19;"Vicálvaro";193;"Valderrivas";"Edad media de la población";34,83
+"118";19;"Vicálvaro";194;"El Cañaveral";"Edad media de la población";32,54
+"119";20;"San Blas-Canillejas";201;"Simancas";"Edad media de la población";42,6
+"120";20;"San Blas-Canillejas";202;"Hellín";"Edad media de la población";47,32
+"121";20;"San Blas-Canillejas";203;"Amposta";"Edad media de la población";43,94
+"122";20;"San Blas-Canillejas";204;"Arcos";"Edad media de la población";43,46
+"123";20;"San Blas-Canillejas";205;"Rosas";"Edad media de la población";41,36
+"124";20;"San Blas-Canillejas";206;"Rejas";"Edad media de la población";38,65
+"125";20;"San Blas-Canillejas";207;"Canillejas";"Edad media de la población";45,84
+"126";20;"San Blas-Canillejas";208;"El Salvador";"Edad media de la población";45,74
+"127";21;"Barajas";211;"Alameda de Osuna";"Edad media de la población";45,02
+"128";21;"Barajas";212;"Aeropuerto";"Edad media de la población";41,68
+"129";21;"Barajas";213;"Casco Histórico de Barajas";"Edad media de la población";44,21
+"130";21;"Barajas";214;"Timón";"Edad media de la población";37,84
+"131";21;"Barajas";215;"Corralejos";"Edad media de la población";37,54
