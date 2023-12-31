@@ -1,0 +1,56 @@
+01_ArboladoZonasVerdesDistritosCalles_2022.xlsx
+201747-0-bibliobuses-bibliotecas.csv
+20220101_defunciones.zip
+2023-02-07_bd_sistema-indices-alquiler-vivienda_2015-2021.xlsx
+202311-0-colegios-publicos.geo
+202318-0-escuelas-infantiles.geo
+300600-0-comisaria.geo
+actividadeconomica202310.csv
+AdjudicacionAlquilerViviendas.xlsx
+agimenezaTFM0122memoria.pdf
+airbnb
+altas_bajas_padron_madrid_2022.xlsx
+AREAS_INFANTILES_2022.csv
+ayudas20231004.csv
+Barrios.csv
+Barrios.kml
+Barrios.txt
+barrios.xlsx
+C14210123.xlsx
+C14210223.xlsx
+C14210323.xlsx
+C142510123.xlsx
+C142510223.xlsx
+C142520123.xlsx
+C142520223.xlsx
+C142520323.xlsx
+catalogo.csv
+catalogo.rdf
+CONDICIONES_EDIFICACION.zip
+Datos_Madrid (1).gpkg
+Datos_Madrid_antiguo.gpkg
+df
+Distritos.csv
+Distritos.zip
+distritos_alq_2021_210223.zip
+estadisticas202310.csv
+fuentes.txt
+Informante_General.xlsx
+Informe_PMH 2021.doc
+Listado de mapas tematicos a realizar.docx
+Mapa de calor simbologia.qml
+Mapa de calor.tif
+Mapa de calor.tif.aux.xml
+municipios_alq_2021_210223.zip
+panel_indicadores_distritos_barrios.csv
+poblacion por edades y barrios.xlsx
+promociones_emvs.xlsx
+Ranking_Vulnerabilidad_Barrios.csv
+Ranking_Vulnerabilidad_Barrios.xlsx
+Ranking_Vulnerabilidad_Barrios_original.csv
+Ranking_Vulnerabilidad_Distritos_original.csv
+Renta de alquiler.qml
+restaurantes_v1_es.xml
+tiendas_v1_es.xml
+USOS_DE_SUELO.zip
+valores_catastrales.xls
