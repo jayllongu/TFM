@@ -1,0 +1,990 @@
+---
+title: "TFM"
+author: "jaag"
+date: "Q4-2023"
+output:
+  html_document:
+    highlight: default
+    number_sections: yes
+    theme: cosmo
+    toc: yes
+    toc_depth: 2
+    includes:
+      in_header: header.html
+  word_document: default
+  pdf_document:
+    highlight: zenburn
+    toc: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+
+<div style="text-align: justify">
+
+
+Librerías necesarias para el proyecto.
+```{r}
+
+if(!require(dplyr)){
+    install.packages('dplyr', repos='http://cran.us.r-project.org')
+    library(dplyr)
+}
+
+if(!require(stringr)){
+    install.packages('stringr', repos='http://cran.us.r-project.org')
+    library(stringr)
+}
+
+if(!require(ggplot2)){
+    install.packages('ggplot2', repos='http://cran.us.r-project.org')
+    library(ggplot2)
+}
+
+if(!require(tidyr)){
+    install.packages('tidyr', repos='http://cran.us.r-project.org')
+    library(tidyr)
+}
+
+if(!require(corrplot)){
+    install.packages('corrplot', repos='http://cran.us.r-project.org')
+    library(corrplot)
+}
+
+if(!require(GGally)){
+    install.packages('GGally', repos='http://cran.us.r-project.org')
+    library(GGally)
+}
+
+if(!require(factoextra)){
+    install.packages('factoextra', repos='http://cran.us.r-project.org')
+    library(factoextra)
+}
+
+if(!require(cluster)){
+    install.packages('cluster', repos='http://cran.us.r-project.org')
+    library(cluster)
+}
+
+```
+
+
+
+
+## Construcción del Conjunto de datos
+
+```{r}
+# Carga y procesado de los datos del Panel de Indicadores de población
+
+df_indPob <- read.csv("DataSet/panel_indicadores_distritos_barrios.csv", sep = ";", dec = ".")
+str(df_indPob)
+
+```
+
+```{r}
+head(df_indPob)
+```
+
+
+```{r}
+# cantidad de distritos y barrios en cada fichero csv
+
+df_aux1_dist <- df_indPob %>%
+  count(cod_distrito, name = "Cantidad_Distritos_Distintos")
+df_aux1_barr <- df_indPob %>%
+  count(cod_barrio, name = "Cantidad_Barios_Distintos")
+
+head(df_aux1_dist)
+head(df_aux1_barr)
+```
+
+
+
+## Indicador del *Estado de Viviendas* en los Distritos de Madrid
+
+
+```{r}
+
+df_EstadoViviendas <- df_indPob %>%
+  filter(str_detect(indicador_nivel2, 'Viviendas en estado | no costa'))
+
+df_EstadoViviendas <- df_EstadoViviendas %>%
+  mutate(valor_indicador = as.numeric(gsub("\\.", "", valor_indicador)))
+
+
+df_EstadoViviendas$indicador_completo <- str_trim(df_EstadoViviendas$indicador_completo)
+
+
+head(df_EstadoViviendas)
+```
+
+
+```{r}
+# subconjunto registros por estado de viviendas Totales en Madrid
+df_EstadoViviendasTotales <- df_EstadoViviendas %>% 
+  filter(is.na(cod_distrito)) %>%
+  select(ciudad, indicador_completo, valor_indicador) %>%
+  mutate(porcentaje = round(valor_indicador / sum(valor_indicador) *100,2))
+
+head(df_EstadoViviendasTotales)
+```
+
+```{r}
+# subconjunto registros por estado de viviendas por Distritos en Madrid
+df_EstadoViviendasDist <- df_EstadoViviendas %>%
+  select(cod_distrito, distrito, indicador_completo, valor_indicador) %>%
+  filter(!is.na(cod_distrito)) %>%
+  group_by(distrito)
+    
+# sustitución de los valores NA por la media para cada tipo de estado
+indicador <- unique(df_EstadoViviendasDist$indicador_completo)
+
+# Itera sobre cada estado de vivienda
+for (estado in indicador) {
+  df_filtrado <- df_EstadoViviendasDist %>%
+    filter(indicador == estado)
+
+  medias <- mean(df_filtrado$valor_indicador, na.rm = TRUE)
+  df_EstadoViviendasDist <- df_EstadoViviendasDist %>%
+    mutate(valor_indicador = ifelse(indicador == estado & is.na(valor_indicador), medias, valor_indicador))
+}
+
+# se añade una columna con el porcentaje de viviendas por cada estado
+df_EstadoViviendasDist <- df_EstadoViviendasDist %>%
+  group_by(indicador_completo) %>%
+  mutate(porcentaje = round(((valor_indicador / sum(valor_indicador)) * 100), digit=2))
+
+name_cols <- c("Cod_Distrito", "Distrito", "Estado_Vivienda", 'Valor_Estado', 'Porcentaje_Viviendas')
+colnames(df_EstadoViviendasDist) <- name_cols
+
+# guarda los datos en un fichero csv
+write.csv2(df_EstadoViviendasDist, file = 'dataset/df_estado_viviendas_dist.csv')
+
+df1_Dist <- df_EstadoViviendasDist
+head(df1_Dist)
+```
+
+
+
+
+
+## Indicador de *Desempleo* en los Distritos de Madrid
+
+Tasa de personas paradas por género, distritos y barrios.
+
+```{r}
+# subconjunto datos Desempleo
+df_Desempleo <- df_indPob %>%
+  filter(str_detect(indicador_nivel1, 'Número de personas paradas')) %>%
+  filter(str_detect(indicador_completo, 'Tasa de desempleo en'))
+
+df_Desempleo <- df_Desempleo %>%
+  mutate(valor_indicador = as.numeric(gsub(",", ".", valor_indicador)))
+
+df_Desempleo$indicador_completo <- str_trim(df_Desempleo$indicador_completo)
+
+head(df_Desempleo)
+```
+
+```{r}
+# subconjunto registros personas paradas Totales en Madrid
+df_DesempleoTotales <- df_Desempleo %>% 
+  filter(is.na(cod_distrito)) %>%
+  select(ciudad, indicador_nivel2, indicador_completo, valor_indicador) %>%
+  group_by(indicador_nivel2) %>%
+  mutate(porcentaje = round(valor_indicador / sum(valor_indicador) *100,2))
+
+head(df_DesempleoTotales)
+```
+
+```{r}
+# subconjunto registros personas paradas Totales en los Distritos de Madrid
+df_DesempleoDist <- df_Desempleo %>% 
+  filter((is.na(cod_barrio)) & !(is.na(cod_distrito))) %>%
+  select(cod_distrito, distrito, indicador_completo, valor_indicador) %>%
+  #group_by(distrito, indicador_nivel2)
+  group_by(distrito, indicador_completo)
+
+name_cols <- c("Cod_Distrito", "Distrito", "Tasa_Desempleo", 'Valor_Tasa')
+colnames(df_DesempleoDist) <- name_cols
+
+# guarda los datos en un fichero csv
+write.csv2(df_DesempleoDist, file = 'dataset/df_desempleo_dist.csv')
+
+df2_Dist <- df_DesempleoDist
+head(df2_Dist)
+```
+
+```{r}
+# subconjunto registros personas paradas Totales en los Barrios de Madrid
+df_DesempleoBarr <- df_Desempleo %>% 
+  filter(!(is.na(cod_barrio)) & !(is.na(cod_distrito))) %>%
+  select(cod_distrito, distrito, cod_barrio, barrio, indicador_nivel2,indicador_completo, valor_indicador) %>%
+  group_by(barrio) %>%
+  mutate(porcentaje = round(valor_indicador / sum(valor_indicador) *100,2))
+
+write.csv2(df_DesempleoBarr, file = 'dataset/df_desempleo_barr.csv')
+
+head(df_DesempleoBarr)
+```
+
+
+
+```{r}
+# gráficas personas paradas por distritos 2020
+df1 <- df_Desempleo
+ggplot(df1, aes(x = distrito , y = valor_indicador, color = indicador_completo, group = indicador_nivel2)) +
+  geom_line() + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+## Indicador de *Renta* en los Distritos de Madrid
+
+Renta media anual.
+
+```{r}
+# subconjunto datos Renta
+df_Renta <- df_indPob %>%
+  filter(año == '2018') %>%
+  filter(str_detect(indicador_nivel1, 'Renta')) %>%
+  filter(str_detect(indicador_nivel2, 'Neta anual'))
+
+df_Renta <- df_Renta %>%
+  mutate(valor_indicador = as.numeric(gsub(",", ".", valor_indicador)))
+
+df_Renta$indicador_completo <- str_trim(df_Renta$indicador_completo)
+
+head(df_Renta)
+```
+
+```{r}
+# subconjunto Renta media anual Totales en Madrid
+df_Rentas <- df_Renta %>% 
+  filter(is.na(cod_distrito)) %>%
+  select(ciudad, indicador_completo, valor_indicador) %>%
+  mutate(porcentaje = round(valor_indicador / sum(valor_indicador) *100,2))
+
+head(df_Rentas)
+```
+```{r}
+# subconjunto Renta media anual en los Distritos de Madrid
+df_RentaDist <- df_Renta %>% 
+  filter((is.na(cod_barrio)) & !(is.na(cod_distrito))) %>%
+  select(cod_distrito, distrito, indicador_completo, valor_indicador) %>%
+  group_by(distrito)
+
+name_cols <- c("Cod_Distrito", "Distrito", "Renta_Media", 'Valor_Renta')
+colnames(df_RentaDist) <- name_cols
+
+write.csv2(df_RentaDist, file = 'dataset/df_renta_dist.csv')
+
+df3_Dist <- df_RentaDist
+head(df3_Dist)
+```
+```{r}
+# subconjunto Renta media anual en los Barrios de Madrid
+df_RentaBarr <- df_Renta %>% 
+  filter(!(is.na(cod_barrio)) & !(is.na(cod_distrito))) %>%
+  select(cod_distrito, distrito, cod_barrio, barrio, indicador_completo, valor_indicador) %>%
+  group_by(barrio)
+
+write.csv2(df_RentaBarr, file = 'dataset/df_renta_barr.csv')
+
+head(df_RentaBarr)
+```
+
+
+## Indicador de *Edad* de la población en los Distritos de Madrid
+
+Edad media población.
+
+```{r}
+# subconjunto datos Edad Media
+df_Edad <- df_indPob %>%
+  filter(año == '2019') %>%
+  filter(str_detect(indicador_nivel1, 'Edad Media'))
+
+df_Edad <- df_Edad %>%
+  mutate(valor_indicador = as.numeric(gsub(",", ".", valor_indicador)))
+
+df_Edad$indicador_completo <- str_trim(df_Edad$indicador_completo)
+
+head(df_Edad)
+```
+
+```{r}
+# subconjunto Edad media anual Totales en Madrid
+df_Edades <- df_Edad %>% 
+  filter(is.na(cod_distrito)) %>%
+  select(ciudad, indicador_completo, valor_indicador)
+
+head(df_Edades)
+```
+
+```{r}
+# subconjunto Edad media anual en los Distritos de Madrid
+df_EdadDist <- df_Edad %>% 
+  filter((is.na(cod_barrio)) & !(is.na(cod_distrito))) %>%
+  select(cod_distrito, distrito, indicador_completo, valor_indicador) %>%
+  group_by(distrito)
+
+name_cols <- c("Cod_Distrito", "Distrito", "Edad_Media", 'Valor_Edad')
+colnames(df_EdadDist) <- name_cols
+
+write.csv2(df_EdadDist, file = 'dataset/df_edad_dist.csv')
+
+df4_Dist <- df_EdadDist
+head(df4_Dist)
+```
+
+
+```{r}
+# subconjunto Edad media anual en los Barrios de Madrid
+df_EdadBarr <- df_Edad %>% 
+  filter(!(is.na(cod_barrio)) & !(is.na(cod_distrito))) %>%
+  select(cod_distrito, distrito, cod_barrio, barrio, indicador_completo, valor_indicador) %>%
+  group_by(barrio)
+  
+write.csv2(df_EdadBarr, file = 'dataset/df_edad_barr.csv')
+
+head(df_EdadBarr)
+```
+
+
+## Indicador de *Densidad de Población* en los Distritos de Madrid
+
+Densidad de población.
+
+```{r}
+# subconjunto datos Densidad de Población
+df_Densidad <- df_indPob %>%
+  filter(año == '2020') %>%
+  filter(str_detect(indicador_nivel1, 'Densidad de población'))
+
+df_Densidad <- df_Densidad %>%
+  mutate(valor_indicador = as.numeric(gsub(",", ".", valor_indicador)))
+
+df_Densidad$indicador_completo <- str_trim(df_Densidad$indicador_completo)
+
+head(df_Densidad)
+```
+
+```{r}
+# subconjunto Densidad de Población anual Totales en Madrid
+df_Densidades <- df_Densidad %>% 
+  filter(is.na(cod_distrito)) %>%
+  select(ciudad, indicador_completo, valor_indicador)
+
+head(df_Densidades)
+```
+
+```{r}
+# subconjunto Densidad de Población anual en los Distritos de Madrid
+df_DensidadDist <- df_Densidad %>% 
+  filter((is.na(cod_barrio)) & !(is.na(cod_distrito))) %>%
+  select(cod_distrito, distrito, indicador_completo, valor_indicador) %>%
+  group_by(distrito)
+
+name_cols <- c("Cod_Distrito", "Distrito", "Densidad_Poblacion", 'Valor_DensidadPob')
+colnames(df_DensidadDist) <- name_cols
+
+write.csv2(df_DensidadDist, file = 'dataset/df_densidad_dist.csv')
+
+df5_Dist <- df_DensidadDist
+head(df5_Dist)
+```
+
+
+```{r}
+# subconjunto Densidad de Población anual en los Barrios de Madrid
+df_DensidadBarr <- df_Densidad %>% 
+  filter(!(is.na(cod_barrio)) & !(is.na(cod_distrito))) %>%
+  select(cod_distrito, distrito, cod_barrio, barrio, indicador_completo, valor_indicador) %>%
+  group_by(barrio)
+
+write.csv2(df_DensidadBarr, file = 'dataset/df_densidad_barr.csv')
+  
+head(df_DensidadBarr)
+```
+
+
+
+## Indicador de *Seguridad* en los Distritos de Madrid
+
+Seguridad Ciudadana de población.
+
+```{r}
+# subconjunto datos Seguridad Ciudadana
+df_Seguridad <- df_indPob %>%
+  filter(año == '2019') %>%
+  filter(str_detect(indicador_nivel2, 'Seguridad'))
+
+df_Seguridad <- df_Seguridad %>%
+  mutate(valor_indicador = as.numeric(gsub("\\.", "", valor_indicador)))
+
+df_Seguridad$indicador_completo <- str_trim(df_Seguridad$indicador_completo)
+
+head(df_Seguridad)
+```
+
+```{r}
+# subconjunto Seguridad de Población anual Totales en Madrid
+df_Seguridades <- df_Seguridad %>% 
+  filter(is.na(cod_distrito)) %>%
+  select(ciudad, indicador_completo, valor_indicador) %>%
+  mutate(porcentaje = round(valor_indicador / sum(valor_indicador) *100,2))
+
+head(df_Seguridades)
+```
+
+```{r}
+# subconjunto Seguridad de Población anual en los Distritos de Madrid
+df_SeguridadDist <- df_Seguridad %>% 
+  filter((is.na(cod_barrio)) & !(is.na(cod_distrito))) %>%
+  select(cod_distrito, distrito, indicador_completo, valor_indicador) %>%
+  group_by(distrito) %>%
+  mutate(porcentaje = round(valor_indicador / sum(valor_indicador) *100,2))
+
+name_cols <- c("Cod_Distrito", "Distrito", "Tipo_Intervencion", 'Valor_Intevencion', 'Porcentaje_Intervenciones')
+colnames(df_SeguridadDist) <- name_cols
+
+write.csv2(df_SeguridadDist, file = 'dataset/df_seguridad_counts_dist.csv')
+
+df6_Dist <- df_SeguridadDist
+head(df6_Dist)
+```
+
+```{r}
+# subconjunto Seguridad de Población anual en los Distritos de Madrid
+df_Seguridad_Dist <- df_Seguridad %>% 
+  filter((is.na(cod_barrio)) & !(is.na(cod_distrito))) %>%
+  select(cod_distrito, distrito, valor_indicador) %>%
+  group_by(cod_distrito,distrito) %>%
+  summarize(total = sum(valor_indicador), .groups = "drop")
+
+write.csv2(df_Seguridad_Dist, file = 'dataset/df_seguridad_dist.csv')
+
+head(df_Seguridad_Dist)
+```
+
+
+## Indicador de *Valores Catastro* en los Distritos de Madrid
+
+Valor Catastral por Distritos y Barrios.
+
+```{r}
+# subconjunto datos Catastro 
+df_Catastro <- df_indPob %>%
+  filter(año == '2019') %>%
+  filter(str_detect(indicador_nivel1, 'Valor catastral'))
+
+df_Catastro <- df_Catastro %>%
+  mutate(valor_indicador = as.numeric(gsub(",", ".", valor_indicador)))
+
+df_Catastro$indicador_completo <- str_trim(df_Catastro$indicador_completo)
+
+head(df_Catastro)
+```
+
+```{r}
+# subconjunto Catastro Totales en Madrid
+df_Catastros <- df_Catastro %>% 
+  filter(is.na(cod_distrito)) %>%
+  select(ciudad, indicador_completo, valor_indicador)
+
+head(df_Catastros)
+```
+
+```{r}
+# subconjunto Catastro en los Distritos de Madrid
+df_CatastroDist <- df_Catastro %>% 
+  filter((is.na(cod_barrio)) & !(is.na(cod_distrito))) %>%
+  select(cod_distrito, distrito, indicador_completo, valor_indicador) %>%
+  group_by(distrito)
+
+name_cols <- c("Cod_Distrito", "Distrito", "Tipo_Catastro", 'Valor_catastro')
+colnames(df_CatastroDist) <- name_cols
+
+write.csv2(df_CatastroDist, file = 'dataset/df_catastro_dist.csv')
+
+df7_Dist <- df_CatastroDist
+head(df7_Dist)
+```
+
+
+
+```{r}
+# subconjunto Catastro en los Barrios de Madrid
+df_CatastroBarr <- df_Catastro %>% 
+  filter(!(is.na(cod_barrio)) & !(is.na(cod_distrito))) %>%
+  select(cod_distrito, distrito, cod_barrio, barrio, indicador_completo, valor_indicador) %>%
+  group_by(barrio)
+
+write.csv2(df_CatastroBarr, file = 'dataset/df_catastro_barr.csv')
+
+head(df_CatastroBarr)
+```
+
+## Indicador de *Detenciones* en los Distritos de Madrid
+
+Personas detenidas por Distritos.
+
+```{r}
+# subconjunto datos Detenciones 
+df_Detenciones <- df_indPob %>%
+  filter(año == '2019') %>%
+  filter(str_detect(indicador_nivel1, 'personas detenidas'))
+
+df_Detenciones <- df_Detenciones %>%
+  mutate(valor_indicador = as.numeric(gsub(",", ".", valor_indicador)))
+
+df_Detenciones$indicador_completo <- str_trim(df_Detenciones$indicador_completo)
+
+head(df_Detenciones)
+```
+
+```{r}
+# subconjunto Detenciones Totales en Madrid
+df_Detencioness <- df_Detenciones %>% 
+  filter(is.na(cod_distrito)) %>%
+  select(ciudad, indicador_nivel2,indicador_completo, valor_indicador)
+
+head(df_Detencioness)
+```
+
+```{r}
+# subconjunto Total Detenciones en los Distritos de Madrid
+df_DetencionesTotalesDist <- df_Detenciones %>% 
+  filter((is.na(cod_barrio)) & !(is.na(cod_distrito))) %>%
+  select(cod_distrito, distrito, valor_indicador) %>%
+  group_by(distrito)
+
+name_cols <- c("Cod_Distrito", "Distrito", 'Valor_Detenciones')
+colnames(df_DetencionesTotalesDist) <- name_cols
+
+write.csv2(df_DetencionesTotalesDist, file = 'dataset/df_detencionesTotales_dist.csv')
+
+df8_Dist <- df_DetencionesTotalesDist
+head(df8_Dist)
+```
+
+## Indicador de calidad de vida 
+
+```{r}
+# subconjunto datos calidad de vida en los distritos
+df_CalidadVida <- df_indPob %>%
+  filter(año == '2019') %>%
+  filter(fuente_indicador =='Encuesta de calidad de vida y satisfacción con los Servicios Públicos de Madrid 2019') %>%
+  filter(str_detect(indicador_completo, 'Calidad de vida actual en su barrio '))
+
+df_CalidadVida <- df_CalidadVida %>%
+  mutate(valor_indicador = as.numeric(gsub(",", ".", valor_indicador)))
+
+df_CalidadVida$indicador_completo <- str_trim(df_CalidadVida$indicador_completo)
+
+head(df_CalidadVida)
+```
+
+```{r}
+# subconjunto calidad de vida Total en Madrid
+df_CalidadesVida <- df_CalidadVida %>% 
+  filter(is.na(cod_distrito)) %>%
+  select(ciudad, indicador_completo, valor_indicador)
+
+head(df_CalidadesVida)
+```
+
+```{r}
+# subconjunto Calidad de Vida en los Distritos de Madrid
+df_CalidadVidaDist <- df_CalidadVida %>% 
+  filter((is.na(cod_barrio)) & !(is.na(cod_distrito))) %>%
+  select(cod_distrito, distrito, indicador_completo, valor_indicador) %>%
+  group_by(distrito)
+
+name_cols <- c("Cod_Distrito", "Distrito", "Calidad_Vida", 'Valor_calidadVida')
+colnames(df_CalidadVidaDist) <- name_cols
+
+write.csv2(df_CalidadVidaDist, file = 'dataset/df_calidad_vida_dist.csv')
+
+df9_Dist <- df_CalidadVidaDist
+head(df9_Dist)
+```
+
+## Indicador de percepción de seguridad en la noche 
+
+```{r}
+# subconjunto datos percepción de seguridad en la noche en los distritos
+df_PercepcionSeguridad <- df_indPob %>%
+  filter(año == '2019') %>%
+  filter(indicador_nivel2 =='Percepción seguridad') %>%
+  filter(str_detect(indicador_completo, 'Percepción de seguridad en el barrio por la noche'))
+
+df_PercepcionSeguridad <- df_PercepcionSeguridad %>%
+  mutate(valor_indicador = as.numeric(gsub(",", ".", valor_indicador)))
+
+df_PercepcionSeguridad$indicador_completo <- str_trim(df_PercepcionSeguridad$indicador_completo)
+
+head(df_PercepcionSeguridad)
+```
+
+```{r}
+# subconjunto calidad de vida Total en Madrid
+df_PercepcionesSeguridad <- df_PercepcionSeguridad %>% 
+  filter(is.na(cod_distrito)) %>%
+  select(ciudad, indicador_completo, valor_indicador)
+
+head(df_PercepcionesSeguridad)
+```
+
+```{r}
+# subconjunto Calidad de Vida en los Distritos de Madrid
+df_PercepcionSeguridadDist <- df_PercepcionSeguridad %>% 
+  filter((is.na(cod_barrio)) & !(is.na(cod_distrito))) %>%
+  select(cod_distrito, distrito, indicador_completo, valor_indicador) %>%
+  group_by(distrito)
+
+name_cols <- c("Cod_Distrito", "Distrito", "Percepcion_Seguridad", 'Valor_PercepcionSeguridad')
+colnames(df_PercepcionSeguridadDist) <- name_cols
+
+write.csv2(df_PercepcionSeguridadDist, file = 'dataset/df_percepcion_seguridad_noche_dist.csv')
+
+df10_Dist <- df_PercepcionSeguridadDist
+head(df10_Dist)
+```
+
+
+
+## Datos de alquileres vacacionesles de Airbnb
+
+```{r}
+# Carga y procesado de los datos de AIRBNB en Madrid
+
+df_airbnb <- read.csv("DataSet/airbnb_listings.csv", sep = ";", dec = ".")
+
+str(df_airbnb)
+```
+
+```{r}
+# número de alquileres vacacionales disponibles por distrito
+
+df_airbnb_Dist <- df_airbnb %>% 
+  select(cod_distrito, distrito, host_id) %>%
+  group_by(cod_distrito, distrito) %>%
+  summarize(numero_alquileres = n(), .groups = "drop")
+
+name_cols <- c("Cod_Distrito", "Distrito", 'Alquileres')
+colnames(df_airbnb_Dist) <- name_cols  
+
+write.csv2(df_airbnb_Dist, file = 'dataset/df_airbnb_dist.csv')
+
+df_airbnb_Dist
+```
+
+
+```{r}
+# número de alquileres vacacionales disponibles por distrito
+
+# agrupar por distritos, contar y ordenar
+df_airbnb_counts_dist <- df_airbnb %>%
+  group_by(distrito) %>%
+  tally(sort = FALSE) %>%
+  mutate(percent = round(100* n / sum(n),2))
+
+write.csv2(df_airbnb_counts_dist, file = 'dataset/df_airbnb_counts_dist.csv')
+
+df_airbnb_counts_dist
+```
+
+
+```{r}
+# número de alquileres vacacionales disponibles por Barrio
+# agrupar por Barrios, contar y ordenar
+df_airbnb_counts_barr <- df_airbnb %>%
+  group_by(barrio) %>%
+  tally(sort = TRUE) %>%
+  mutate(percent = round(100* n / sum(n),2))
+
+write.csv2(df_airbnb_counts_barr, file = 'dataset/df_airbnb_barr.csv')
+
+df_airbnb_counts_barr
+```
+
+```{r}
+# generación del conjunto de datos a partir de los subconjuntos obtenidos
+rm(df_aux)
+df_aux <- merge(df3_Dist, df4_Dist, by = c('Cod_Distrito', 'Distrito'), all = TRUE)
+df_aux <- merge(df_aux, df5_Dist, by = c('Cod_Distrito', 'Distrito'), all = TRUE)
+df_aux <- merge(df_aux, df8_Dist, by = c('Cod_Distrito', 'Distrito'), all = TRUE)
+df_aux <- merge(df_aux, df9_Dist, by = c('Cod_Distrito', 'Distrito'), all = TRUE)
+df_aux <- merge(df_aux, df10_Dist, by = c('Cod_Distrito', 'Distrito'), all = TRUE)
+
+columnas_a_quitar <-c ('Renta_Media', 'Edad_Media', 'Densidad_Poblacion', 'Calidad_Vida', 'Percepcion_Seguridad')
+df_aux <- df_aux %>%
+  select(-one_of(columnas_a_quitar))
+head(df_aux)
+```
+
+```{r}
+# incorporar el resto de subconjuntos
+
+# tasas de desempleo. Subdividido en Hombres/Mujeres y Tramos de Edad
+df_pivoted <- df2_Dist %>%
+  group_by(Cod_Distrito, Distrito, Tasa_Desempleo) %>%
+  summarise(valor_medio = round(mean(Valor_Tasa, na.rm = TRUE), digits = 2)) %>%
+  pivot_wider(names_from = Tasa_Desempleo, values_from = valor_medio)
+
+df_aux <- merge(df_aux, df_pivoted, by = c('Cod_Distrito', 'Distrito'), all = TRUE)
+
+# intervenciones de la policía local por tipología de intervención
+df_pivoted <- df6_Dist %>%
+  group_by(Cod_Distrito, Distrito, Tipo_Intervencion) %>%
+  summarise(valor_medio = round(mean(Valor_Intevencion, na.rm = TRUE), digits = 2)) %>%
+  pivot_wider(names_from = Tipo_Intervencion, values_from = valor_medio)
+
+df_aux <- merge(df_aux, df_pivoted, by = c('Cod_Distrito', 'Distrito'), all = TRUE)
+
+# valores catastrales. Subdividido en tipo de persona
+df_pivoted <- df7_Dist %>%
+  group_by(Cod_Distrito, Distrito, Tipo_Catastro) %>%
+  summarise(valor_medio = round(mean(Valor_catastro, na.rm = TRUE), digits = 2)) %>%
+  pivot_wider(names_from = Tipo_Catastro, values_from = valor_medio)
+
+df_aux <- merge(df_aux, df_pivoted, by = c('Cod_Distrito', 'Distrito'), all = TRUE)
+
+# estado de las viviendas. 
+df_pivoted <- df1_Dist %>%
+  group_by(Cod_Distrito, Distrito, Estado_Vivienda) %>%
+  summarise(valor_medio = round(mean(Valor_Estado, na.rm = TRUE), digits = 2)) %>%
+  pivot_wider(names_from = Estado_Vivienda, values_from = valor_medio)
+
+df_aux <- merge(df_aux, df_pivoted, by = c('Cod_Distrito', 'Distrito'), all = TRUE)
+
+# incroporar los datos de airbnb
+df_aux <- merge(df_aux, df_airbnb_Dist, by = c('Cod_Distrito', 'Distrito'), all = TRUE)
+
+
+```
+```{r}
+# se carga la variable Target.
+# 0 si el distrito pierde habitantes, 1 si no pierde habitantes
+df_Target <- read.csv2('df/df_target.csv')
+
+#se añade al dataframe
+df_aux <- merge(df_aux, df_Target, by = c('Cod_Distrito', 'Distrito'), all = TRUE)
+```
+
+
+
+```{r}
+# se renombran las columnas
+
+columnas <- c('Cod_Distrito', 'Distrito', 'Renta_Media', 'Edad_Media', 'Densidad_Pob', 'Num_Detenciones', 'Calidad_Vida', 'Percepcion_seguridad', 'Tasa_Desem_H_16_24', 'Tasa_Desem_H_25_44', 'Tasa_Desem_H_45_64', 'Tasa_Desem_M_16_24', 'Tasa_Desem_M_25_44', 'Tasa_Desem_M_45_64', 'Num_Delitos_Perso', 'Num_Delitos_Pat', 'Num_Delitos_Armas', 'Num_Delitos_Drogas', 'Valor_Cat_Fisicas', 'Valor_Cat_Juridicas', 'Vivienda_NoConsta', 'Vivienda_Bueno', 'Vivienda_Deficiente', 'Vivienda_Malo', 'Vivienda_Ruina', 'Num_Alquileres_Airbnb', 'Target')
+
+colnames(df_aux) <- columnas
+
+write.csv2(df_aux, file = 'df/dataset.csv')
+head(df_aux)
+```
+
+
+## Predicciones con el dataset
+
+```{r}
+# carga del conjunto de datos
+df <- read.csv2('df/dataset.csv')
+str(df)
+```
+
+
+
+
+```{r}
+# se excluyen las columnas no necesarias
+df_clust <- df[-c(1:3)]
+#df_clust <- df_clust[-df_clust$Target]
+df_clust
+```
+
+```{r}
+# posibles valores anómalos
+for(i in 1:24){
+  boxplot(df_clust[,i] ~ df_clust$Target, main =colnames(df_clust)[i], xlab = "Target",
+          ylab = colnames(df_clust)[i], col="lightblue")
+}
+```
+
+```{r}
+# Normalización de las variables
+
+# Función de Normalización
+fun_normalize <- function(x, na.rm = TRUE) {
+  return((x- min(x)) /(max(x)-min(x)))
+}
+
+df_clust_Normalized <- as.data.frame(apply(df_clust,MARGIN  = 2, FUN = fun_normalize))
+
+summary(df_clust_Normalized)
+```
+
+
+
+```{r}
+# correlación de las variables
+x <- df_clust_Normalized[-df_clust_Normalized$Target]
+
+corr_map <- ggcorr(x, method=c("everything", "pearson"), nbreaks = 4, label=TRUE, label_size = 3, label_alpha = TRUE, hjust = .90, size = 2, layout.exp = 1)
+corr_map
+```
+
+
+```{r}
+# determinación del número de clústeres.
+
+fviz_nbclust(x, FUNcluster = kmeans, method = "silhouette", k.max = 10) +
+  labs(title = "Número óptimo de clusters")
+
+# Elbow Method
+fviz_nbclust(x, FUNcluster = kmeans, method = "wss", k.max = 10) +
+  labs(title = "Número óptimo de clusters")
+```
+
+
+
+## K-means
+```{r}
+# k-means 3 clusters
+kmeans_clusters <- kmeans(x, centers = 3, iter.max = 100)
+```
+
+```{r}
+kmeans_clusters$centers
+```
+```{r}
+# matriz de confusión
+t <- table(kmeans_clusters$cluster, df_clust$Target)
+t
+```
+```{r}
+fviz_cluster(object = kmeans_clusters, data = x, show.clust.cent = TRUE,
+             ellipse.type = "euclid", star.plot = TRUE, repel = FALSE) +
+  labs(title = "Resultados clustering K-means 3 Clústers") +
+  theme_bw() +
+  theme(legend.position = "none")
+```
+
+```{r}
+# k-means 2 clusters
+kmeans_clusters <- kmeans(x, centers = 2, iter.max = 100)
+```
+
+```{r}
+kmeans_clusters$centers
+```
+```{r}
+# matriz de confusión
+t <- table(kmeans_clusters$cluster, df_clust$Target)
+t
+```
+```{r}
+fviz_cluster(object = kmeans_clusters, data = x, show.clust.cent = TRUE,
+             ellipse.type = "euclid", star.plot = TRUE, repel = FALSE) +
+  labs(title = "Resultados clustering K-means 2 Clústeres") +
+  theme_bw() +
+  theme(legend.position = "none")
+```
+
+```{r}
+#  2 clusters para los datos normalizados
+km <- kmeans_clusters
+par(mfrow=c(1,2))
+#Sacamos las gráficas
+for (i in 1:23){
+  for (j in (i+1):24){
+   
+      plot(x[c(i,j)], col=km$cluster, main="Clasificación k-means")
+    legend("topright",
+           legend = levels(factor(km$cluster)),
+           pch = 10,cex = 0.9,
+           col = factor(levels(factor(km$cluster))))
+      
+      plot(x[c(i,j)], col=as.factor(df_clust$Target), main="Clasificación real")
+      legend("topright",
+             legend = levels(factor(df_clust$Target)),
+             pch = 10,cex=0.9,
+             col = factor(levels(factor(df_clust$Target))))
+    
+  }
+}
+```
+
+
+
+## K-medoids
+
+```{r}
+# K-medoids
+pam_clusters <- pam(x, k = 3, metric = "manhattan")
+```
+
+```{r}
+#medoids obtenidos
+pam_clusters$medoids
+```
+
+```{r}
+# información de clústeres obtenidos
+pam_clusters$clusinfo
+```
+
+```{r}
+# Visualización del resultado de agrupamiento con K-medoids.
+
+fviz_cluster(object = pam_clusters, data = x, ellipse.type = "t",
+             repel = FALSE) +
+  theme_bw() +
+  labs(title = "Resultados clustering K-medoids k=3 clústeres") +
+  theme(legend.position = "none")
+```
+
+```{r}
+# matriz de confusión
+t <- table(pam_clusters$cluster, df_clust$Target)
+t
+```
+
+
+```{r}
+# K-medoids
+pam_clusters <- pam(x, k = 2, metric = "manhattan")
+```
+
+```{r}
+#medoids obtenidos
+pam_clusters$medoids
+```
+
+```{r}
+# información de clústeres obtenidos
+pam_clusters$clusinfo
+```
+
+```{r}
+# Visualización del resultado de agrupamiento con K-medoids.
+
+fviz_cluster(object = pam_clusters, data = x, ellipse.type = "t",
+             repel = FALSE) +
+  theme_bw() +
+  labs(title = "Resultados clustering K-medoids k=2 clústeres") +
+  theme(legend.position = "none")
+```
+
+
+
+
